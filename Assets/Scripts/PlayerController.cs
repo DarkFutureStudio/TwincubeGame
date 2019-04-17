@@ -32,6 +32,5 @@ public class PlayerController : MonoBehaviour
     }
     private void Jumping()
     {
-
     }
 }
