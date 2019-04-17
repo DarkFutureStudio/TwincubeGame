@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1701484313}
+  m_Follow: {fileID: 792522703}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 4.49
@@ -574,8 +574,6 @@ GameObject:
   m_Component:
   - component: {fileID: 632591874}
   - component: {fileID: 632591875}
-  - component: {fileID: 632591876}
-  - component: {fileID: 632591877}
   m_Layer: 0
   m_Name: black
   m_TagString: Untagged
@@ -1129,8 +1127,6 @@ GameObject:
   - component: {fileID: 1701484313}
   - component: {fileID: 1701484314}
   - component: {fileID: 1701484315}
-  - component: {fileID: 1701484316}
-  - component: {fileID: 1701484317}
   m_Layer: 0
   m_Name: white
   m_TagString: Untagged
