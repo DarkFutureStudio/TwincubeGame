@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34919557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.508631, y: 0.4509999, z: -10}
+  m_LocalPosition: {x: -4.9193354, y: -0.4490001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 256993391}
@@ -459,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.508631, y: 0.4509999, z: -10}
+  m_LocalPosition: {x: -4.9193354, y: -0.4490001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -574,6 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632591874}
   - component: {fileID: 632591875}
+  - component: {fileID: 632591877}
   m_Layer: 0
   m_Name: black
   m_TagString: Untagged
@@ -645,20 +646,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &632591876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632591873}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0990749eefb5afe489630964dbc19a8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayerSpeed: 10
-  m_ForceJump: 700
 --- !u!50 &632591877
 Rigidbody2D:
   serializedVersion: 4
@@ -667,14 +654,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632591873}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1127,6 +1114,7 @@ GameObject:
   - component: {fileID: 1701484313}
   - component: {fileID: 1701484314}
   - component: {fileID: 1701484315}
+  - component: {fileID: 1701484317}
   m_Layer: 0
   m_Name: white
   m_TagString: Untagged
@@ -1214,20 +1202,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &1701484316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701484312}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf5172e55b77ad4ca6c7887e4dca2f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayerSpeed: 10
-  m_ForceJump: 700
 --- !u!50 &1701484317
 Rigidbody2D:
   serializedVersion: 4
@@ -1236,7 +1210,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701484312}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
