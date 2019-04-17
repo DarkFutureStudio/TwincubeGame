@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6189130}
   - component: {fileID: 6189131}
+  - component: {fileID: 6189132}
   m_Layer: 0
   m_Name: WinTrigger
   m_TagString: Untagged
@@ -169,6 +170,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &6189132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6189129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2f5f3fc1ee2ef4fa834f3f36c9d96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_WinCanv: {fileID: 248687387}
 --- !u!1 &34919557
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276288972}
   - component: {fileID: 276288973}
+  - component: {fileID: 276288974}
   m_Layer: 0
   m_Name: WinTrigger (1)
   m_TagString: Untagged
@@ -497,6 +512,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &276288974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276288971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2f5f3fc1ee2ef4fa834f3f36c9d96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_WinCanv: {fileID: 248687387}
 --- !u!1 &468093350
 GameObject:
   m_ObjectHideFlags: 0
