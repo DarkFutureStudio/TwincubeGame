@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D[] m_player = new Rigidbody2D[2];
     bool m_isJump = false;
     float m_horizontalInput = 0;
-    bool m_jumpPermission = true;
 
     private void Awake()
     {
@@ -25,10 +24,9 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (m_isJump && m_jumpPermission)
+        if (m_isJump)
         {
             Jumping();
-            m_jumpPermission = false;
             m_isJump = false;
         }
 
@@ -39,11 +37,5 @@ public class PlayerController : MonoBehaviour
     {
         m_player[0].AddForce(new Vector2(0, m_JumpForce));
         m_player[1].AddForce(new Vector2(0, -m_JumpForce));
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-            m_jumpPermission = true;
     }
 }
