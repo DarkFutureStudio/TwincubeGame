@@ -30,5 +30,7 @@ public class PlayerController : MonoBehaviour
             m_isJump = false;
         }
     }
-    public abstract void Jumping();
+    private void Jumping()
+    {
+    }
 }
