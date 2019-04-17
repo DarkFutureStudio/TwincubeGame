@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 34919559}
   - component: {fileID: 34919558}
+  - component: {fileID: 34919560}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -174,13 +175,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34919557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.389336, y: -0.4490001, z: -10}
+  m_LocalPosition: {x: -10.405351, y: -0.22450005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 256993391}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34919560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34919557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 1232987599}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &256993390
 GameObject:
   m_ObjectHideFlags: 3
@@ -231,17 +249,17 @@ MonoBehaviour:
   m_XDamping: 2.7
   m_YDamping: 1
   m_ZDamping: 1
-  m_ScreenX: 0.426
-  m_ScreenY: 0.45
+  m_ScreenX: 0.509
+  m_ScreenY: 0.475
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.43
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0.16599998
-  m_BiasY: 0
+  m_SoftZoneWidth: 0.3
+  m_SoftZoneHeight: 0.77
+  m_BiasX: 0.017000038
+  m_BiasY: 0.024999969
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 2
@@ -380,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.389336, y: -0.4490001, z: -10}
+  m_LocalPosition: {x: -2.1808767, y: -0.036965713, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -540,7 +558,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
   m_Mass: 0.64000005
-  m_LinearDrag: 0
+  m_LinearDrag: 0.53
   m_AngularDrag: 0.05
   m_GravityScale: -1
   m_Material: {fileID: 0}
@@ -575,7 +593,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792522702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.16, y: 0, z: 0}
+  m_LocalPosition: {x: -10.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1701484313}
@@ -631,7 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 147.7
-  m_MoveSpeed: 10
+  m_MoveSpeed: 6.59
 --- !u!1 &1020208630
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +789,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1141884786
 SpriteRenderer:
@@ -853,9 +871,77 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!1 &1232987598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232987600}
+  - component: {fileID: 1232987599}
+  m_Layer: 0
+  m_Name: Confiner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1232987599
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232987598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.685358, y: 5.3100243}
+      - {x: -11.128583, y: 5.359783}
+      - {x: -11.083321, y: -2.7866073}
+      - {x: -10.904227, y: -10.640889}
+      - {x: 11.845986, y: -10.786345}
+      - {x: 13.261997, y: -10.670092}
+      - {x: 13.541234, y: -9.764519}
+      - {x: 13.453306, y: -8.556765}
+      - {x: 13.478662, y: -6.4221797}
+      - {x: 13.489714, y: 5.0004196}
+      - {x: 11.6813755, y: 5.0016565}
+      - {x: 11.536336, y: 4.961834}
+--- !u!4 &1232987600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232987598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1800594, y: 3.4588854, z: 0.015625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1485392157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1493,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
   m_Mass: 0.64000005
-  m_LinearDrag: 0
+  m_LinearDrag: 0.53
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -1660,7 +1746,7 @@ Transform:
   m_Children:
   - {fileID: 1578578659}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1788193652
 TilemapCollider2D:
@@ -1815,7 +1901,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &2011101765
 SpriteRenderer:
@@ -1894,12 +1980,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &2017348017
 GameObject:
   m_ObjectHideFlags: 0
