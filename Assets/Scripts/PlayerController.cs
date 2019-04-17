@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlyaerController : MonoBehaviour
+public abstract class PlayerController : MonoBehaviour
 {
     public float m_PlayerSpeed = 10;
     public float m_ForceJump = 700;
 
-    Rigidbody2D m_playerRigid;
+    protected Rigidbody2D m_playerRigid;
     bool m_isJump = false;
 
     private void Awake()
@@ -28,6 +28,7 @@ public abstract class PlyaerController : MonoBehaviour
         if (m_isJump)
         {
             Jumping();
+            m_isJump = false;
         }
     }
     public abstract void Jumping();

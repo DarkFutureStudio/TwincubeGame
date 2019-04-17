@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DownPlayer : MonoBehaviour
+public class DownPlayer : PlayerController
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Jumping()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        m_playerRigid.AddForce(new Vector2(0, -m_ForceJump));
     }
 }
