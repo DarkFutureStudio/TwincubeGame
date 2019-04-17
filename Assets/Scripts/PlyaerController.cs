@@ -2,17 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlyaerController : MonoBehaviour
+public abstract class PlyaerController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float m_PlayerSpeed = 10;
+    public float m_ForceJump = 700;
+
+    Rigidbody2D m_playerRigid;
+    bool m_isJump = false;
+
+    private void Awake()
+    {
+        m_playerRigid = GetComponent<Rigidbody2D>();
+    }
     void Start()
     {
-        
+        m_playerRigid.velocity = new Vector2(m_PlayerSpeed, m_playerRigid.velocity.y);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetButtonDown("Jump"))
+            m_isJump = true;
     }
+    private void FixedUpdate()
+    {
+        if (m_isJump)
+        {
+            Jumping();
+        }
+    }
+    public abstract void Jumping();
 }
