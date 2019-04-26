@@ -6,7 +6,7 @@ public class TriggerWin : MonoBehaviour
 {
     public GameObject m_WinCanv;
 
-    static int m_counter = 0;
+    public static int m_counter = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
