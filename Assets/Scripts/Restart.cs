@@ -8,6 +8,6 @@ public class Restart
         TriggerWin.m_counter = 0;
 
         //restart the current scene(level)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
