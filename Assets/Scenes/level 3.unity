@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_JumpForce: 154
   m_MoveSpeed: 6.59
-  m_JumpLimit: 6
+  m_JumpLimit: 1000
 --- !u!1 &1020208630
 GameObject:
   m_ObjectHideFlags: 0
