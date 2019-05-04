@@ -10,8 +10,12 @@ public class Levelchanger : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            FadeToLevel(1);
+            FadeToNextLevel();
         }
+    }
+    public void FadeToNextLevel ()
+    {
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void FadeToLevel (int levelIndex)
     {
