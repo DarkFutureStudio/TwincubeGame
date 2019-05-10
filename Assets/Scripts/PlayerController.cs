@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
         //get players rigidbody in children...
         for (int i = 0; i < transform.childCount; i++)
         {
+
             m_player[i] = transform.GetChild(i).GetComponent<Rigidbody2D>();
         }
     }
