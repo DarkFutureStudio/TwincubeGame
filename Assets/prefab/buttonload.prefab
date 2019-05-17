@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3244765342423044810
 Transform:
   m_ObjectHideFlags: 0
@@ -43,5 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee47a821c4df0e46991a7bff02f15a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: level 1
+  LevelToLoad: Level 1
+  LevelToLoad1: Level 2
+  LevelToLoad2: Level 3
+  LevelToLoad3: Level 4
+  LevelToLoad4: Level 5
   sceneFader: {fileID: 0}
