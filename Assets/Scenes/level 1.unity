@@ -288,7 +288,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -479,7 +479,7 @@ Transform:
   - {fileID: 1613117157}
   - {fileID: 2017348019}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742817368
 GameObject:
@@ -558,7 +558,7 @@ Transform:
   m_LocalScale: {x: 1.4851, y: 1.4851, z: 1.4851}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1010112492 stripped
 MonoBehaviour:
@@ -627,7 +627,7 @@ PrefabInstance:
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
@@ -662,6 +662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: gameOverUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831459623631337803, guid: d1860c4eb0df06148beff1b9d8de554a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1831459623631337807, guid: d1860c4eb0df06148beff1b9d8de554a,
         type: 3}
@@ -701,7 +706,7 @@ PrefabInstance:
     - target: {fileID: 1831459623631337807, guid: d1860c4eb0df06148beff1b9d8de554a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1831459623631337807, guid: d1860c4eb0df06148beff1b9d8de554a,
         type: 3}
@@ -800,7 +805,7 @@ Transform:
   - {fileID: 6189130}
   - {fileID: 276288972}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578578658
 GameObject:
@@ -966,7 +971,7 @@ PrefabInstance:
     - target: {fileID: 68174035950533420, guid: 96dde27733d7dfc43964ecc4698132e7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 68174035950533420, guid: 96dde27733d7dfc43964ecc4698132e7,
         type: 3}
@@ -1141,7 +1146,7 @@ PrefabInstance:
     - target: {fileID: 7334482803166812359, guid: 78ac9d3f1f4f6374c8d81b2db7186f41,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7334482803166812359, guid: 78ac9d3f1f4f6374c8d81b2db7186f41,
         type: 3}
@@ -1351,7 +1356,7 @@ Transform:
   m_Children:
   - {fileID: 1578578659}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1788193652
 TilemapCollider2D:
@@ -1550,7 +1555,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2073379361
 PrefabInstance:
@@ -1661,6 +1666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pause menu canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 467422500584074052, guid: 68a32d369aee5d64ca9daf851c5a37b9,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1010112492}
     - target: {fileID: 467422500591444528, guid: 68a32d369aee5d64ca9daf851c5a37b9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1699,7 +1709,7 @@ PrefabInstance:
     - target: {fileID: 467422500591444528, guid: 68a32d369aee5d64ca9daf851c5a37b9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 467422500591444528, guid: 68a32d369aee5d64ca9daf851c5a37b9,
         type: 3}
@@ -1776,11 +1786,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1010112492}
-    - target: {fileID: 467422500584074052, guid: 68a32d369aee5d64ca9daf851c5a37b9,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1010112492}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68a32d369aee5d64ca9daf851c5a37b9, type: 3}
 --- !u!1001 &4591006925513406354
@@ -1833,7 +1838,7 @@ PrefabInstance:
     - target: {fileID: 4591006924826826845, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4591006924826826845, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
         type: 3}
@@ -1864,6 +1869,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: gamemaster
       objectReference: {fileID: 0}
+    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
+        type: 3}
+      propertyPath: ui
+      value: 
+      objectReference: {fileID: 125897206}
+    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
+        type: 3}
+      propertyPath: manubutton.Array.data[0]
+      value: 
+      objectReference: {fileID: 2031849493}
+    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
+        type: 3}
+      propertyPath: scenefader
+      value: 
+      objectReference: {fileID: 2073379362}
     - target: {fileID: 8001942435451425686, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1902,7 +1922,7 @@ PrefabInstance:
     - target: {fileID: 8001942435451425686, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8001942435451425686, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
         type: 3}
@@ -1919,20 +1939,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
-        type: 3}
-      propertyPath: ui
-      value: 
-      objectReference: {fileID: 125897206}
-    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
-        type: 3}
-      propertyPath: manubutton.Array.data[0]
-      value: 
-      objectReference: {fileID: 2031849493}
-    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
-        type: 3}
-      propertyPath: scenefader
-      value: 
-      objectReference: {fileID: 2073379362}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f054829ad4d7b44193b2d66cce0ffbd, type: 3}
