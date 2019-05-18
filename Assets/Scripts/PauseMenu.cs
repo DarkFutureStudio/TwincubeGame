@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu: MonoBehaviour
 {
+
     public GameObject ui;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -31,8 +34,14 @@ public class PauseMenu: MonoBehaviour
         Toggle();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public void Menu ()
+   
+    public Button[] manubutton;
+
+    public SceneFader scenefader;
+    public void Select (string levelname)
     {
-        Debug.Log("Go to menu.");
+        Toggle();
+        scenefader.FadeTo(levelname);
     }
+
 }

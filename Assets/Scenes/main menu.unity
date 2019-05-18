@@ -771,46 +771,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1675827674914096449, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.data[1].inSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.data[1].outSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.data[1].inWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675827675465979595, guid: 9f0e1c70ef2cdb5468320e74c26468b2,
-        type: 3}
-      propertyPath: curve.m_Curve.Array.data[1].outWeight
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f0e1c70ef2cdb5468320e74c26468b2, type: 3}
 --- !u!1 &1913307343
