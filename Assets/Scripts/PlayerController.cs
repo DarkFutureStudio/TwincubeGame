@@ -1,56 +1,40 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour
 {
-    public float m_JumpForce = 700;
-    public float m_MoveSpeed = 10;
-    public int m_JumpLimit = 6;
-        //joystick input
+    public float jumpForce = 700;
+    public float moveSpeed = 10;
+    public int jumpLimit = 6;
     public Joystick joystick;
-    Rigidbody2D[] m_player = new Rigidbody2D[2];
-    bool m_isJump = false;
-    float m_horizontalInput = 0;
-    private Restart m_gameReset = new Restart();
 
-    private void Awake()
+    Rigidbody2D[] m_Player = new Rigidbody2D[2];
+    float m_HorizontalInput = 0;
+    Restart m_GameReset = new Restart();
+
+    void Awake()
     {
         //get players rigidbody in children...
         for (int i = 0; i < transform.childCount; i++)
         {
-            m_player[i] = transform.GetChild(i).GetComponent<Rigidbody2D>();
+            m_Player[i] = transform.GetChild(i).GetComponent<Rigidbody2D>();
         }
-    }
-    
-    private void Update()
+    }    
+    void FixedUpdate()
     {
-        if (Input.GetButtonDown("Jump"))
-            m_isJump = true;
-
-
-
-        m_horizontalInput = joystick.Horizontal;
-     //   m_horizontalInput = Input.GetAxisRaw("Horizontal");
-    }
-    private void FixedUpdate()
-    {
-        if (m_isJump)
-        {
-            Jumping(); //add force to players
-            //count the jumps...
-            m_JumpLimit--;
-            if (m_JumpLimit == 0)
-                m_gameReset.RestartScene();
-
-            m_isJump = false;
-        }
-
+        m_HorizontalInput = joystick.Horizontal;
         //move the players...
-        transform.Translate(new Vector2(m_horizontalInput * m_MoveSpeed * Time.fixedDeltaTime, 0));
+        transform.Translate(new Vector2(m_HorizontalInput * moveSpeed * Time.fixedDeltaTime, 0));
     }
     
-    void Jumping()
+    public void Jumping()
     {
-        m_player[0].AddForce(new Vector2(0, m_JumpForce));
-        m_player[1].AddForce(new Vector2(0, -m_JumpForce));
+        m_Player[0].AddForce(new Vector2(0, jumpForce));
+        m_Player[1].AddForce(new Vector2(0, -jumpForce));
+
+        jumpLimit--;
+        if (jumpLimit == 0)
+            m_GameReset.RestartScene();
     }
 }
