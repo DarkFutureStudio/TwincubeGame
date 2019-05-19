@@ -5,7 +5,8 @@ public class PlayerController : MonoBehaviour
     public float m_JumpForce = 700;
     public float m_MoveSpeed = 10;
     public int m_JumpLimit = 6;
-
+        //joystick input
+    public Joystick joystick;
     Rigidbody2D[] m_player = new Rigidbody2D[2];
     bool m_isJump = false;
     float m_horizontalInput = 0;
@@ -19,12 +20,16 @@ public class PlayerController : MonoBehaviour
             m_player[i] = transform.GetChild(i).GetComponent<Rigidbody2D>();
         }
     }
+    
     private void Update()
     {
         if (Input.GetButtonDown("Jump"))
             m_isJump = true;
 
-        m_horizontalInput = Input.GetAxis("Horizontal");
+
+
+        m_horizontalInput = joystick.Horizontal;
+     //   m_horizontalInput = Input.GetAxisRaw("Horizontal");
     }
     private void FixedUpdate()
     {
