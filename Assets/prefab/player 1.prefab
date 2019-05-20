@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 4591006923859370121}
   - component: {fileID: 4591006923859370127}
   - component: {fileID: 4591006923859370126}
+  - component: {fileID: 5597611254087492691}
   m_Layer: 0
   m_Name: white
   m_TagString: Player
@@ -243,6 +244,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5597611254087492691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4591006923859370122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2330fefde480d65439691ed04aab42db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 170
+  moveSpeed: 10
+  joystick: {fileID: 0}
 --- !u!1 &4591006924029099663
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +558,6 @@ GameObject:
   - component: {fileID: 4591006924826826845}
   - component: {fileID: 4591006924826826818}
   - component: {fileID: 4591006924826826819}
-  - component: {fileID: 4591006924826826816}
   m_Layer: 0
   m_Name: player 1
   m_TagString: Untagged
@@ -601,22 +616,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4591006924826826816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4591006924826826844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53cf0a9d42e960741a6e1ea4d52b4163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 160
-  moveSpeed: 10
-  jumpLimit: 6
-  joystick: {fileID: 0}
 --- !u!1 &4591006924918563219
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +628,7 @@ GameObject:
   - component: {fileID: 4591006924918563217}
   - component: {fileID: 4591006924918563223}
   - component: {fileID: 4591006924918563222}
+  - component: {fileID: 2899680675618228472}
   m_Layer: 0
   m_Name: black
   m_TagString: Player
@@ -747,3 +747,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2899680675618228472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4591006924918563219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2330fefde480d65439691ed04aab42db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 170
+  moveSpeed: 10
+  joystick: {fileID: 0}
