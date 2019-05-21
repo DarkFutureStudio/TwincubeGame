@@ -24,14 +24,14 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        //Move();
+        Move();
     }
 
     void Move()
     {
         m_HorizontalInput = joystick.Horizontal;
-        Vector2 movement = new Vector2(m_HorizontalInput * moveSpeed, 0);
-        m_Rigidbody.MovePosition(m_Rigidbody.position + movement * Time.deltaTime);
+        float xVelocity = m_HorizontalInput * moveSpeed;
+        m_Rigidbody.velocity = new Vector2(xVelocity, m_Rigidbody.velocity.y);
     }
 
     public void Jump()

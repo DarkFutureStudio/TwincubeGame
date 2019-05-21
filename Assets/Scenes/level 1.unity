@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2330fefde480d65439691ed04aab42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &70655068 stripped
+--- !u!114 &70655072 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
     type: 3}
@@ -1950,7 +1950,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 70655068}
+      objectReference: {fileID: 70655072}
     - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2050,6 +2050,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4591006923859370126, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f6e6dafe2d4a41f4386435c41465b8c1, type: 2}
+    - target: {fileID: 4591006924918563222, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: f6e6dafe2d4a41f4386435c41465b8c1, type: 2}
     - target: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
       propertyPath: joystick
       value: 
