@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D m_Rigidbody;
     Vector2 m_JumpDirection;
     float m_HorizontalInput;
-    bool m_IsJump;
 
     void Start()
     {
@@ -23,16 +22,9 @@ public class PlayerController : MonoBehaviour
         }
         m_JumpDirection = new Vector2(0f, jumpForce);
     }
-
     void FixedUpdate()
     {
-        Move();
-
-        if (m_IsJump)
-        {
-            Jump();
-            m_IsJump = false; //jump one time
-        }
+        //Move();
     }
 
     void Move()
@@ -41,13 +33,9 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(m_HorizontalInput * moveSpeed, 0);
         m_Rigidbody.MovePosition(m_Rigidbody.position + movement * Time.deltaTime);
     }
-    void Jump()
+
+    public void Jump()
     {
         m_Rigidbody.AddForce(m_JumpDirection);
-    }
-
-    public void JumpTrigger()
-    {
-        m_IsJump = true;
     }
 }

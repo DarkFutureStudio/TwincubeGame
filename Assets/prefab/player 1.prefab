@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4591006923859370121}
   - component: {fileID: 4591006923859370127}
   - component: {fileID: 4591006923859370126}
-  - component: {fileID: 5597611254087492691}
+  - component: {fileID: 19812984}
   m_Layer: 0
   m_Name: white
   m_TagString: Player
@@ -244,7 +244,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5597611254087492691
+--- !u!114 &19812984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 4591006924918563217}
   - component: {fileID: 4591006924918563223}
   - component: {fileID: 4591006924918563222}
-  - component: {fileID: 2899680675618228472}
+  - component: {fileID: 70655068}
   m_Layer: 0
   m_Name: black
   m_TagString: Player
@@ -747,7 +747,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2899680675618228472
+--- !u!114 &70655068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
