@@ -9,29 +9,45 @@ public class PlayerController : MonoBehaviour
     public Joystick joystick;
 
     Rigidbody2D m_Rigidbody;
-    float m_HorizontalAxis;
+    Vector2 m_JumpDirection;
+    float m_HorizontalInput;
+    bool m_IsJump;
 
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
+
+        if (m_Rigidbody.gravityScale < 0)
+        {
+            jumpForce = -jumpForce;
+        }
+        m_JumpDirection = new Vector2(0f, jumpForce);
     }
 
     void FixedUpdate()
     {
-        m_HorizontalAxis = joystick.Horizontal;
-        Vector2 movement = new Vector2(m_HorizontalAxis * moveSpeed, 0);
-        m_Rigidbody.MovePosition(m_Rigidbody.position + movement * Time.deltaTime);
+        Move();
+
+        if (m_IsJump)
+        {
+            Jump();
+            m_IsJump = false; //jump one time
+        }
     }
 
-    public void Jump(int index)
+    void Move()
     {
-        Vector2 jumpDirection;
+        m_HorizontalInput = joystick.Horizontal;
+        Vector2 movement = new Vector2(m_HorizontalInput * moveSpeed, 0);
+        m_Rigidbody.MovePosition(m_Rigidbody.position + movement * Time.deltaTime);
+    }
+    void Jump()
+    {
+        m_Rigidbody.AddForce(m_JumpDirection);
+    }
 
-        if (index == 0)
-            jumpDirection = new Vector2(0f, jumpForce);
-        else
-            jumpDirection = new Vector2(0f, -jumpForce);
-
-        m_Rigidbody.AddForce(jumpDirection);
+    public void JumpTrigger()
+    {
+        m_IsJump = true;
     }
 }
