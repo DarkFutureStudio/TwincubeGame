@@ -16,11 +16,17 @@ public class PlayerController : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
 
+        float jumpForce;
         if (m_Rigidbody.gravityScale < 0)
         {
-            gameManager.playerJumpForce = -gameManager.playerJumpForce;
+            jumpForce = -gameManager.playerJumpForce;
         }
-        m_JumpDirection = new Vector2(0f, gameManager.playerJumpForce);
+        else
+        {
+            jumpForce = gameManager.playerJumpForce;
+        }
+
+        m_JumpDirection = new Vector2(0f, jumpForce);
     }
     void FixedUpdate()
     {
