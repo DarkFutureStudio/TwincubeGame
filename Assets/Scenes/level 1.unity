@@ -1951,36 +1951,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 70655072}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
 --- !u!1001 &4591006925513406354
@@ -1995,6 +1965,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1205721787}
+    - target: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1205721787}
     - target: {fileID: 4591006924826826845, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2050,24 +2028,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370126, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: f6e6dafe2d4a41f4386435c41465b8c1, type: 2}
-    - target: {fileID: 4591006924918563222, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: f6e6dafe2d4a41f4386435c41465b8c1, type: 2}
-    - target: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1205721787}
-    - target: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1205721787}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
 --- !u!1001 &8001942436042835405

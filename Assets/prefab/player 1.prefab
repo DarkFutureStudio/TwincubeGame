@@ -227,7 +227,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4591006923859370122}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f6e6dafe2d4a41f4386435c41465b8c1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 170
-  moveSpeed: 10
+  moveSpeed: 5
   joystick: {fileID: 0}
 --- !u!1 &4591006924029099663
 GameObject:
@@ -730,7 +730,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4591006924918563219}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f6e6dafe2d4a41f4386435c41465b8c1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -760,5 +760,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 170
-  moveSpeed: 10
+  moveSpeed: 5
   joystick: {fileID: 0}

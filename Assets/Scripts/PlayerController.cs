@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D m_Rigidbody;
     Vector2 m_JumpDirection;
     float m_HorizontalInput;
+    bool m_IsJump;
 
     void Start()
     {
@@ -24,6 +25,12 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (m_IsJump)
+        {
+            m_Rigidbody.AddForce(m_JumpDirection);
+            m_IsJump = false;
+        }
+
         Move();
     }
 
@@ -34,8 +41,8 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody.velocity = new Vector2(xVelocity, m_Rigidbody.velocity.y);
     }
 
-    public void Jump()
+    public void TriggerJump()
     {
-        m_Rigidbody.AddForce(m_JumpDirection);
+        m_IsJump = true;
     }
 }
