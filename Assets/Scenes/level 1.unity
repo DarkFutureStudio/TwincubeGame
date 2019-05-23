@@ -584,6 +584,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &937500932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1058215421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c5726354ed61f48a4306be171c7bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1010112492 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
@@ -611,7 +623,7 @@ PrefabInstance:
     - target: {fileID: 6034725508450762392, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
@@ -1969,10 +1981,18 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1205721787}
+    - target: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 937500932}
     - target: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1205721787}
+    - target: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 937500932}
     - target: {fileID: 4591006924826826845, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,31 +1,10 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static bool GameIsOver;
-
-    public GameObject gameOverUI;
-
-     void Start()
-    {
-        GameIsOver = false;
-    }
-
-     void Update()
-    {
-        if (GameIsOver)
-            return;
-
-     //   if ()
-        {
-            EndGame();
-        }
-
-        void EndGame()
-        {
-            GameIsOver = true;
-            gameOverUI.SetActive(true);
-        }
-    }
+    public float playerMoveSpeed = 5f;
+    public float playerJumpForce = 170f;
 }

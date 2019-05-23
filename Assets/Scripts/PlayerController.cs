@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float jumpForce = 170f;
-    public float moveSpeed = 10f;
+    public GameManager gameManager;
     public Joystick joystick;
 
     Rigidbody2D m_Rigidbody;
@@ -19,9 +18,9 @@ public class PlayerController : MonoBehaviour
 
         if (m_Rigidbody.gravityScale < 0)
         {
-            jumpForce = -jumpForce;
+            gameManager.playerJumpForce = -gameManager.playerJumpForce;
         }
-        m_JumpDirection = new Vector2(0f, jumpForce);
+        m_JumpDirection = new Vector2(0f, gameManager.playerJumpForce);
     }
     void FixedUpdate()
     {
@@ -37,7 +36,7 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         m_HorizontalInput = joystick.Horizontal;
-        float xVelocity = m_HorizontalInput * moveSpeed;
+        float xVelocity = m_HorizontalInput * gameManager.playerMoveSpeed;
         m_Rigidbody.velocity = new Vector2(xVelocity, m_Rigidbody.velocity.y);
     }
 
