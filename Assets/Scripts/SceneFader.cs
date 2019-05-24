@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class SceneFader : MonoBehaviour
 {
-    public Image Img;
-    public AnimationCurve curve; 
+    public float fadeDuration = 1;
 
     void Start ()
     {
-        StartCoroutine(FadeIn()); 
+        StartCoroutine(FadeIn());
     }
-    public void FadeTo (string scene)
+    public void FadeTo (int scene)
     {
-        StartCoroutine(FadeOut(scene));
+        StartCoroutine(FadeOut());
+
+        SceneManager.LoadScene(scene);
     }
 
     IEnumerator FadeIn ()
@@ -27,12 +28,9 @@ public class SceneFader : MonoBehaviour
             float a = curve.Evaluate(t); 
             Img.color = new Color (0f ,0f ,0f , a);
             yield return 0;
-
         }
     }
-
-
-    IEnumerator FadeOut(string scene)
+    IEnumerator FadeOut()
     {
         float t = 0f;
 
@@ -42,8 +40,6 @@ public class SceneFader : MonoBehaviour
             float a = curve.Evaluate(t);
             Img.color = new Color(0f, 0f, 0f, a);
             yield return 0;
-
         }
-        SceneManager.LoadScene(scene);
     }
 }
