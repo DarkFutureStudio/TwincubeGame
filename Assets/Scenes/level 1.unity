@@ -953,6 +953,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 68174035950533422, guid: 96dde27733d7dfc43964ecc4698132e7,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96dde27733d7dfc43964ecc4698132e7, type: 3}
 --- !u!1 &1613117155
@@ -1965,14 +1970,10 @@ PrefabInstance:
       value: player
       objectReference: {fileID: 0}
     - target: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
-      propertyPath: joystick
+      propertyPath: gameManager
       value: 
-      objectReference: {fileID: 1205721787}
+      objectReference: {fileID: 937500932}
     - target: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 937500932}
-    - target: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1205721787}
@@ -1980,6 +1981,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 937500932}
+    - target: {fileID: 70655068, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1205721787}
     - target: {fileID: 4591006924826826845, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2034,6 +2039,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591006923620665020, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591006924029099661, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591006924088893155, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591006924502897258, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b6af6f3a9cc09440a10d6caac4202fd, type: 3}
