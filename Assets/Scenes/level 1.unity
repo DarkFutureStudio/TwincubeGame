@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6189130}
   - component: {fileID: 6189131}
+  - component: {fileID: 6189132}
   m_Layer: 0
   m_Name: WinTrigger
   m_TagString: Untagged
@@ -177,6 +178,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &6189132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6189129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889b0c5969b0c446a0b7041f19ec20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 937500932}
 --- !u!114 &19812984 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 19812984, guid: 1b6af6f3a9cc09440a10d6caac4202fd,
@@ -217,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276288972}
   - component: {fileID: 276288973}
+  - component: {fileID: 276288974}
   m_Layer: 0
   m_Name: WinTrigger (1)
   m_TagString: Untagged
@@ -264,6 +279,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &276288974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276288971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889b0c5969b0c446a0b7041f19ec20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 937500932}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,6 +527,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: gameOverUI
+      value: 
+      objectReference: {fileID: 2085076882}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: jumpCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: jumpLimit
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: isWin
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -553,21 +601,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: gameOverUI
-      value: 
-      objectReference: {fileID: 2085076882}
-    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: jumpCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: jumpLimit
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
