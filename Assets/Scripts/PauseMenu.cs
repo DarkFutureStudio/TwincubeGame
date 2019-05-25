@@ -38,10 +38,10 @@ public class PauseMenu: MonoBehaviour
     public Button[] manubutton;
 
     public SceneFader scenefader;
-    public void Select (string levelname)
+    public void Select (int levelIndex)
     {
         Toggle();
-        scenefader.FadeTo(levelname);
+        scenefader.FadeTo(levelIndex);
     }
 
 }

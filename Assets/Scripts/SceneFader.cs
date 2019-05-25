@@ -5,41 +5,42 @@ using UnityEngine;
 
 public class SceneFader : MonoBehaviour
 {
-    public AnimationCurve curve;
-    public Image image;
+    public float fadeDuration = 1;
+
+    CanvasGroup m_CanvasGroup;
 
     void Start ()
     {
+        m_CanvasGroup = GetComponentInChildren<CanvasGroup>();
+
         StartCoroutine(FadeIn());
     }
-    public void FadeTo (int scene)
+    public void FadeTo(int scene)
     {
         StartCoroutine(FadeOut());
 
         SceneManager.LoadScene(scene);
     }
 
-    IEnumerator FadeIn ()
+    IEnumerator FadeIn()
     {
-        float t = 1f;
+        float timer = 1f;
 
-        while (t > 0f)
+        while (timer > 0f)
         {
-            t -= Time.deltaTime;
-            float a = curve.Evaluate(t); 
-            image.color = new Color (0f ,0f ,0f , a);
+            timer -= Time.deltaTime;
+            m_CanvasGroup.alpha = timer / fadeDuration;
             yield return 0;
         }
     }
     IEnumerator FadeOut()
     {
-        float t = 0f;
+        float timer = 0f;
 
-        while (t < 1f)
+        while (timer < 1f)
         {
-            t += Time.deltaTime;
-            float a = curve.Evaluate(t);
-            image.color = new Color(0f, 0f, 0f, a);
+            timer += Time.deltaTime;
+            m_CanvasGroup.alpha = timer / fadeDuration;
             yield return 0;
         }
     }

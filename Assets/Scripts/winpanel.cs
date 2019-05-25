@@ -8,9 +8,9 @@ public class winpanel : MonoBehaviour
     public Button[] levelselect;
     public SceneFader fader;
 
-    public void Select(string levelname)
+    public void Select(int levelIndex)
     {
-        fader.FadeTo(levelname);
+        fader.FadeTo(levelIndex);
     }
   
     public void retry()
