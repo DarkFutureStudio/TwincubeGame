@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class SceneFader : MonoBehaviour
 {
-    public float fadeDuration = 1;
+    public AnimationCurve curve;
+    public Image image;
 
     void Start ()
     {
@@ -26,7 +27,7 @@ public class SceneFader : MonoBehaviour
         {
             t -= Time.deltaTime;
             float a = curve.Evaluate(t); 
-            Img.color = new Color (0f ,0f ,0f , a);
+            image.color = new Color (0f ,0f ,0f , a);
             yield return 0;
         }
     }
@@ -38,7 +39,7 @@ public class SceneFader : MonoBehaviour
         {
             t += Time.deltaTime;
             float a = curve.Evaluate(t);
-            Img.color = new Color(0f, 0f, 0f, a);
+            image.color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
     }
