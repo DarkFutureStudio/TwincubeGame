@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine;
 
 
-public class winpanel : MonoBehaviour
+public class Winpanel : MonoBehaviour
 {
     public Button[] levelselect;
     public SceneFader fader;
@@ -12,10 +12,8 @@ public class winpanel : MonoBehaviour
     {
         fader.FadeTo(levelIndex);
     }
-  
-    public void retry()
+    public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
 }

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class PauseMenu: MonoBehaviour
 {
     public SceneFader scenefader;
-    public Button[] manubutton;
     public GameObject pauseCanvas;
 
     void Update()
@@ -15,6 +14,7 @@ public class PauseMenu: MonoBehaviour
             Toggle();
         }
     }
+
     public void Toggle()
     {
         pauseCanvas.SetActive(!pauseCanvas.activeSelf);
@@ -22,7 +22,6 @@ public class PauseMenu: MonoBehaviour
         //time scale will 1 or 0
         Time.timeScale = (Time.timeScale + 1) % 2;
     }
-
     public void Retry()
     {
         Toggle();
