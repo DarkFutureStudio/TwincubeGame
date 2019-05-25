@@ -1,51 +1,53 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float m_JumpForce = 700;
-    public float m_MoveSpeed = 10;
-    public int m_JumpLimit = 6;
+    public GameManager gameManager;
+    public Joystick joystick;
 
-    Rigidbody2D[] m_player = new Rigidbody2D[2];
-    bool m_isJump = false;
-    float m_horizontalInput = 0;
-    private Restart m_gameReset = new Restart();
+    Rigidbody2D m_Rigidbody;
+    Vector2 m_JumpDirection;
+    float m_HorizontalInput;
+    bool m_IsJump;
 
-    private void Awake()
+    void Start()
     {
-        //get players rigidbody in children...
-        for (int i = 0; i < transform.childCount; i++)
+        m_Rigidbody = GetComponent<Rigidbody2D>();
+
+        float jumpForce;
+        if (m_Rigidbody.gravityScale < 0)
         {
-            m_player[i] = transform.GetChild(i).GetComponent<Rigidbody2D>();
+            jumpForce = -gameManager.playerJumpForce;
         }
-    }
-    private void Update()
-    {
-        if (Input.GetButtonDown("Jump"))
-            m_isJump = true;
-
-        m_horizontalInput = Input.GetAxis("Horizontal");
-    }
-    private void FixedUpdate()
-    {
-        if (m_isJump)
+        else
         {
-            Jumping(); //add force to players
-            //count the jumps...
-            m_JumpLimit--;
-            if (m_JumpLimit == 0)
-                m_gameReset.RestartScene();
-
-            m_isJump = false;
+            jumpForce = gameManager.playerJumpForce;
         }
 
-        //move the players...
-        transform.Translate(new Vector2(m_horizontalInput * m_MoveSpeed * Time.fixedDeltaTime, 0));
+        m_JumpDirection = new Vector2(0f, jumpForce);
     }
-    
-    void Jumping()
+    void FixedUpdate()
     {
-        m_player[0].AddForce(new Vector2(0, m_JumpForce));
-        m_player[1].AddForce(new Vector2(0, -m_JumpForce));
+        if (m_IsJump)
+        {
+            m_Rigidbody.AddForce(m_JumpDirection);
+            m_IsJump = false;
+        }
+
+        Move();
+    }
+
+    void Move()
+    {
+        m_HorizontalInput = joystick.Horizontal;
+        float xVelocity = m_HorizontalInput * gameManager.playerMoveSpeed;
+        m_Rigidbody.velocity = new Vector2(xVelocity, m_Rigidbody.velocity.y);
+    }
+
+    public void TriggerJump()
+    {
+        m_IsJump = true;
     }
 }
