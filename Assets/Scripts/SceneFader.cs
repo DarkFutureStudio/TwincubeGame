@@ -26,7 +26,7 @@ public class SceneFader : MonoBehaviour
     {
         float timer = 1f;
 
-        while (timer > 0f)
+        while (timer > 0)
         {
             timer -= Time.deltaTime;
             m_CanvasGroup.alpha = timer / fadeDuration;
@@ -37,7 +37,7 @@ public class SceneFader : MonoBehaviour
     {
         float timer = 0f;
 
-        while (timer < 1f)
+        while (timer < 1)
         {
             timer += Time.deltaTime;
             m_CanvasGroup.alpha = timer / fadeDuration;

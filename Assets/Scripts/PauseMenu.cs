@@ -4,8 +4,9 @@ using UnityEngine.UI;
 
 public class PauseMenu: MonoBehaviour
 {
-
-    public GameObject ui;
+    public SceneFader scenefader;
+    public Button[] manubutton;
+    public GameObject pauseCanvas;
 
     void Update()
     {
@@ -13,20 +14,13 @@ public class PauseMenu: MonoBehaviour
         {
             Toggle();
         }
-
-
     }
     public void Toggle()
     {
-        ui.SetActive(!ui.activeSelf);
+        pauseCanvas.SetActive(!pauseCanvas.activeSelf);
 
-        if (ui.activeSelf)
-        {
-            Time.timeScale = 0f;
-        } else
-        {
-            Time.timeScale = 1f;
-        }
+        //time scale will 1 or 0
+        Time.timeScale = (Time.timeScale + 1) % 2;
     }
 
     public void Retry()
@@ -34,10 +28,6 @@ public class PauseMenu: MonoBehaviour
         Toggle();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-   
-    public Button[] manubutton;
-
-    public SceneFader scenefader;
     public void Select (int levelIndex)
     {
         Toggle();
