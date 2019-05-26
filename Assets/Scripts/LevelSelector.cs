@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour
 {
-    public SceneFader fader;
     public Button[] levelButtons;
 
    void Start ()
@@ -16,8 +15,4 @@ public class LevelSelector : MonoBehaviour
               levelButtons[i].interactable = false;
         }
    }
-    public void Select(int levelIndex)
-    {
-        fader.FadeTo(levelIndex);
-    }
 }

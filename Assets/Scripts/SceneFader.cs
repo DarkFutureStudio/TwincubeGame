@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SceneFader : MonoBehaviour
 {
+    [Range(0f, 3f)]
     public float fadeDuration = 1;
 
     CanvasGroup m_CanvasGroup;
@@ -15,6 +16,7 @@ public class SceneFader : MonoBehaviour
 
         StartCoroutine(FadeIn());
     }
+
     public void FadeTo(int scene)
     {
         StartCoroutine(FadeOut());
