@@ -7,21 +7,17 @@ public class SceneFader : MonoBehaviour
 {
     [Range(0f, 3f)]
     public float fadeDuration = 1;
+    public CanvasGroup canvasGroup;
 
-    CanvasGroup m_CanvasGroup;
 
     void Start ()
     {
-        m_CanvasGroup = GetComponentInChildren<CanvasGroup>();
-
         StartCoroutine(FadeIn());
     }
 
     public void FadeTo(int scene)
     {
-        StartCoroutine(FadeOut());
-
-        SceneManager.LoadScene(scene);
+        StartCoroutine(FadeOut(scene));
     }
 
     IEnumerator FadeIn()
@@ -31,19 +27,21 @@ public class SceneFader : MonoBehaviour
         while (timer > 0)
         {
             timer -= Time.deltaTime;
-            m_CanvasGroup.alpha = timer / fadeDuration;
+            canvasGroup.alpha = timer / fadeDuration;
             yield return 0;
         }
     }
-    IEnumerator FadeOut()
+    IEnumerator FadeOut(int scene)
     {
         float timer = 0f;
 
         while (timer < 1)
         {
             timer += Time.deltaTime;
-            m_CanvasGroup.alpha = timer / fadeDuration;
+            canvasGroup.alpha = timer / fadeDuration;
             yield return 0;
         }
+
+        SceneManager.LoadScene(scene);
     }
 }
