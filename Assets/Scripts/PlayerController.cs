@@ -35,15 +35,16 @@ public class PlayerController : MonoBehaviour
             m_Rigidbody.AddForce(m_JumpDirection);
             m_IsJump = false;
         }
+        m_HorizontalInput = joystick.Horizontal;
 
         Move();
     }
 
     void Move()
     {
-        m_HorizontalInput = joystick.Horizontal;
-        float xVelocity = m_HorizontalInput * gameManager.playerMoveSpeed;
-        m_Rigidbody.velocity = new Vector2(xVelocity, m_Rigidbody.velocity.y);
+        Vector2 movement = new Vector2(m_HorizontalInput , 0f);
+        movement *= gameManager.playerMoveSpeed;
+        m_Rigidbody.AddForce(movement);
     }
 
     public void TriggerJump()
