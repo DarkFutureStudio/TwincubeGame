@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
 
+        //Determines what direction should player jump
         float jumpForce;
         if (m_Rigidbody.gravityScale < 0)
         {
@@ -35,18 +36,19 @@ public class PlayerController : MonoBehaviour
             m_Rigidbody.AddForce(m_JumpDirection);
             m_IsJump = false;
         }
+        m_HorizontalInput = joystick.Horizontal;
 
         Move();
     }
 
     void Move()
     {
-        m_HorizontalInput = joystick.Horizontal;
-        float xVelocity = m_HorizontalInput * gameManager.playerMoveSpeed;
-        m_Rigidbody.velocity = new Vector2(xVelocity, m_Rigidbody.velocity.y);
+        float horizontalMovement = m_HorizontalInput * gameManager.playerMoveSpeed;
+        Vector2 movement = new Vector2(horizontalMovement, 0f);
+        m_Rigidbody.AddForce(movement);
     }
 
-    public void TriggerJump()
+    public void TriggerJump() //Call with button event
     {
         m_IsJump = true;
     }

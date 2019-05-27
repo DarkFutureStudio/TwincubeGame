@@ -522,31 +522,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6034725508450762392, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
-      propertyPath: gameOverUI
+      propertyPath: SceneFader
       value: 
-      objectReference: {fileID: 2085076882}
-    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: jumpCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: jumpLimit
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
-        type: 3}
-      propertyPath: isWin
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1637160739}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -740,6 +720,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 937500932}
+    - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1205721787}
+    - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 937500932}
+    - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1205721787}
     - target: {fileID: 4591006924826826845, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -795,22 +791,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 937500932}
-    - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1205721787}
-    - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 937500932}
-    - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 1205721787}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
 --- !u!114 &1205721787 stripped
@@ -1037,6 +1017,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68174035950533422, guid: 96dde27733d7dfc43964ecc4698132e7,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 68174035950533422, guid: 96dde27733d7dfc43964ecc4698132e7,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96dde27733d7dfc43964ecc4698132e7, type: 3}
@@ -1348,6 +1338,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334482803166812409, guid: 78ac9d3f1f4f6374c8d81b2db7186f41,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334482803166812409, guid: 78ac9d3f1f4f6374c8d81b2db7186f41,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78ac9d3f1f4f6374c8d81b2db7186f41, type: 3}
@@ -1743,12 +1743,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2085076882 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1831459623631337803, guid: d1860c4eb0df06148beff1b9d8de554a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1103328628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467422501147015210
 PrefabInstance:
   m_ObjectHideFlags: 0

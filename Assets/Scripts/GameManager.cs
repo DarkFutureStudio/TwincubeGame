@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public float playerJumpForce = 170f;
     public int jumpLimit;
     public bool isWin;
+    public SceneFader SceneFader;
 
     int m_CurrentSceneIndex;
     int m_TargetHoles;
@@ -21,29 +22,24 @@ public class GameManager : MonoBehaviour
     {
         if (jumpLimit < 0)
         {
-            //if you lose
-            LoadLevel(m_CurrentSceneIndex);
+            //In case you lose loading current scene
+            SceneFader.FadeTo(m_CurrentSceneIndex);
         }
         if (m_TargetHoles == 2)
         {
-            //if you won
+            //In case you win load next level
             if (isWin)
             {
-                LoadLevel(m_CurrentSceneIndex + 1);
+                SceneFader.FadeTo(m_CurrentSceneIndex + 1);
             }
         }
     }
 
-    void LoadLevel(int level)
-    {
-        SceneManager.LoadScene(level);
-    }
-
-    public void ButtonPressed()
+    public void ButtonPressed() //Pressing 'jump' button reduce jumpCount
     {
         jumpLimit--;
     }
-    public void IncreamentTarget()
+    public void IncreamentTarget() //Put targets in holes will call this function
     {
         m_TargetHoles++;
     }

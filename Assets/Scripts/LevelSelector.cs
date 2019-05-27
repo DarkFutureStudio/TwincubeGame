@@ -3,16 +3,22 @@ using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour
 {
-    public Button[] levelButtons;
+   public Button[] levelButtons;
+    public bool lockLevel;
 
    void Start ()
    {
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        if (!lockLevel)
+            return;
+
+        int levelReached = PlayerPrefs.GetInt("levelReached", 1); //A file that saves player progress
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i - 6 > levelReached)
-              levelButtons[i].interactable = false;
+            if (i >= levelReached)
+            {
+                levelButtons[i].interactable = false;
+            }
         }
    }
 }
