@@ -42,8 +42,8 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        Vector2 movement = new Vector2(m_HorizontalInput , 0f);
-        movement *= gameManager.playerMoveSpeed;
+        float horizontalMovement = m_HorizontalInput * gameManager.playerMoveSpeed;
+        Vector2 movement = new Vector2(horizontalMovement, 0f);
         m_Rigidbody.AddForce(movement);
     }
 
