@@ -11,7 +11,7 @@ public class LevelSelector : MonoBehaviour
         if (!lockLevel)
             return;
 
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        int levelReached = PlayerPrefs.GetInt("levelReached", 1); //A file that saves player progress
 
         for (int i = 0; i < levelButtons.Length; i++)
         {

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
 
+        //Determines what direction should player jump
         float jumpForce;
         if (m_Rigidbody.gravityScale < 0)
         {
@@ -47,7 +48,7 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody.AddForce(movement);
     }
 
-    public void TriggerJump()
+    public void TriggerJump() //Call with button event
     {
         m_IsJump = true;
     }

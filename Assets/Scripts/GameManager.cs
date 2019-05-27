@@ -22,12 +22,12 @@ public class GameManager : MonoBehaviour
     {
         if (jumpLimit < 0)
         {
-            //if you lose
+            //In case you lose loading current scene
             SceneFader.FadeTo(m_CurrentSceneIndex);
         }
         if (m_TargetHoles == 2)
         {
-            //if you won
+            //In case you win load next level
             if (isWin)
             {
                 SceneFader.FadeTo(m_CurrentSceneIndex + 1);
@@ -35,11 +35,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ButtonPressed()
+    public void ButtonPressed() //Pressing 'jump' button reduce jumpCount
     {
         jumpLimit--;
     }
-    public void IncreamentTarget()
+    public void IncreamentTarget() //Put targets in holes will call this function
     {
         m_TargetHoles++;
     }
