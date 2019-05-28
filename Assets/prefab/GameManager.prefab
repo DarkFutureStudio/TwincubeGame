@@ -47,4 +47,5 @@ MonoBehaviour:
   playerJumpForce: 525
   jumpLimit: 100
   isWin: 0
+  useKeyboard: 0
   SceneFader: {fileID: 0}
