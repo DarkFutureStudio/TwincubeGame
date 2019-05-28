@@ -3,22 +3,28 @@ using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour
 {
-   public Button[] levelButtons;
+    public GameObject levelCanvas;
     public bool lockLevel;
 
-   void Start ()
-   {
-        if (!lockLevel)
-            return;
+    Button[] buttons;
 
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1); //A file that saves player progress
+    void Start ()
+    {
+        buttons = levelCanvas.GetComponentsInChildren<Button>();
 
-        for (int i = 0; i < levelButtons.Length; i++)
+        if (lockLevel)
         {
-            if (i >= levelReached)
+            //A file that saves the player progress
+            int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+
+            //Disable levels when player doesn't reached them
+            for (int i = 0; i < buttons.Length; i++)
             {
-                levelButtons[i].interactable = false;
+                if (i >= levelReached)
+                {
+                    buttons[i].interactable = false;
+                }
             }
         }
-   }
+    }
 }

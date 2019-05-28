@@ -20,7 +20,7 @@ public class PauseMenu: MonoBehaviour
         pauseCanvas.SetActive(!pauseCanvas.activeSelf);
 
         //time scale will 1 or 0
-        Time.timeScale = (Time.timeScale + 1) % 2;
+        Time.timeScale = ((int)Time.timeScale + 1) % 2;
     }
     public void Retry()
     {
@@ -32,5 +32,4 @@ public class PauseMenu: MonoBehaviour
         Toggle();
         scenefader.FadeTo(levelIndex);
     }
-
 }

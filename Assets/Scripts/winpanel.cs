@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Winpanel : MonoBehaviour
 {
-    public Button[] levelselect;
     public SceneFader fader;
 
     public void Select(int levelIndex)
