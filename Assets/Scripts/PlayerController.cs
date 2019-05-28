@@ -29,6 +29,21 @@ public class PlayerController : MonoBehaviour
 
         m_JumpDirection = new Vector2(0f, jumpForce);
     }
+    void Update()
+    {
+        if (gameManager.useKeyboard)
+        {
+            m_HorizontalInput = Input.GetAxis("Horizontal");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                m_IsJump = true;
+            }
+
+            return;
+        }
+
+        m_HorizontalInput = joystick.Horizontal;
+    }
     void FixedUpdate()
     {
         if (m_IsJump)
@@ -36,7 +51,6 @@ public class PlayerController : MonoBehaviour
             m_Rigidbody.AddForce(m_JumpDirection);
             m_IsJump = false;
         }
-        m_HorizontalInput = joystick.Horizontal;
 
         Move();
     }

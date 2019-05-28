@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public float playerJumpForce = 170f;
     public int jumpLimit;
     public bool isWin;
+    public bool useKeyboard;
     public SceneFader SceneFader;
 
     int m_CurrentSceneIndex;
