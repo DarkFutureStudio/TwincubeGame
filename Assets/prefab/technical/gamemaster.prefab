@@ -43,7 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ae32e0aa0cd45439e30b0c9ab152ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 0}
-  manubutton:
-  - {fileID: 0}
   scenefader: {fileID: 0}
+  pauseCanvas: {fileID: 0}
