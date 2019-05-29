@@ -191,12 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 937500932}
---- !u!1 &125897206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 467422501121913308, guid: 68a32d369aee5d64ca9daf851c5a37b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 467422501147015210}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &276288971
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +521,16 @@ PrefabInstance:
       propertyPath: SceneFader
       value: 
       objectReference: {fileID: 1637160739}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: useKeyboard
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: isWin
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1660,18 +1664,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2031849493 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 467422500584074052, guid: 68a32d369aee5d64ca9daf851c5a37b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 467422501147015210}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2037250096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,16 +2002,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 937500932}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TriggerJump
-      objectReference: {fileID: 0}
-    - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: TriggerJump
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
 --- !u!1001 &8001942436042835405
@@ -2034,16 +2016,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: gamemaster
       objectReference: {fileID: 0}
-    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
-        type: 3}
-      propertyPath: ui
-      value: 
-      objectReference: {fileID: 125897206}
-    - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
-        type: 3}
-      propertyPath: manubutton.Array.data[0]
-      value: 
-      objectReference: {fileID: 2031849493}
     - target: {fileID: 8001942435451425687, guid: 4f054829ad4d7b44193b2d66cce0ffbd,
         type: 3}
       propertyPath: scenefader
