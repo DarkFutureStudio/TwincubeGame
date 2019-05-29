@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 7205737717014674115}
   m_Layer: 31
   m_Name: trap 180
-  m_TagString: Untagged
+  m_TagString: trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

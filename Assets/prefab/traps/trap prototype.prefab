@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4390072658450506987}
   - component: {fileID: 4390072658450506986}
   - component: {fileID: 4390072658450506985}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: trap prototype
-  m_TagString: Untagged
+  m_TagString: trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 94ec9c219def11948a97d0dd00475466, type: 3}
-  m_Color: {r: 1, g: 0.46689767, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.07058824, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

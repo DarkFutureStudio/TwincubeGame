@@ -1246,11 +1246,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FaderCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5452222832465951473, guid: dc11860c88334954ca288cf4df80c678,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6722782601905604066, guid: dc11860c88334954ca288cf4df80c678,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1355,31 +1350,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951993166018487475, guid: dc11860c88334954ca288cf4df80c678,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951993166018487475, guid: dc11860c88334954ca288cf4df80c678,
-        type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8951993166018487475, guid: dc11860c88334954ca288cf4df80c678,
-        type: 3}
-      propertyPath: m_IgnoreParentGroups
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2559708198571478197, guid: dc11860c88334954ca288cf4df80c678,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8109249872346980408, guid: dc11860c88334954ca288cf4df80c678,
-        type: 3}
-      propertyPath: fadeDuration
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc11860c88334954ca288cf4df80c678, type: 3}
@@ -2454,6 +2424,11 @@ PrefabInstance:
       propertyPath: m_Targets.Array.data[1].target
       value: 
       objectReference: {fileID: 1769807567}
+    - target: {fileID: 4821476472726758993, guid: b209fc800fdc7744e96801b7ccd425b9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.8329
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b209fc800fdc7744e96801b7ccd425b9, type: 3}
 --- !u!1001 &8001942436042835405
