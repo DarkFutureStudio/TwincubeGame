@@ -2,7 +2,6 @@
 using UnityEngine.UI;
 using UnityEngine;
 
-
 public class Winpanel : MonoBehaviour
 {
     public SceneFader fader;
