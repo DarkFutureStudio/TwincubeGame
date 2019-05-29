@@ -1712,6 +1712,11 @@ PrefabInstance:
       propertyPath: SceneFader
       value: 
       objectReference: {fileID: 1637160739}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: useKeyboard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3785,6 +3790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467422500591444531, guid: 68a32d369aee5d64ca9daf851c5a37b9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68a32d369aee5d64ca9daf851c5a37b9, type: 3}
