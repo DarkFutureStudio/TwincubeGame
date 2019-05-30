@@ -3,14 +3,11 @@ using UnityEngine.UI;
 
 public class LevelMenu : MonoBehaviour
 {
-    public GameObject levelCanvas;
     public bool lockLevel;
-
-    Button[] buttons;
 
     void Start ()
     {
-        buttons = levelCanvas.GetComponentsInChildren<Button>();
+        Button[] buttons = GetComponentsInChildren<Button>();
 
         if (lockLevel)
         {
