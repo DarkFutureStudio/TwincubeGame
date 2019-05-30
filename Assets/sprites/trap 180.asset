@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: trap 180
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: c06909be8ee55c64a87267249ed7cc82, type: 3}
-  m_Color: {r: 1, g: 0.07058824, b: 0, a: 1}
+  m_Color: {r: 0.7921569, g: 0.05490196, b: 0, a: 1}
   m_Transform:
     e00: 1
     e01: 0
