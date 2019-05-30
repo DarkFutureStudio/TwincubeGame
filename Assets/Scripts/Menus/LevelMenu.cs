@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelSelector : MonoBehaviour
+public class LevelMenu : MonoBehaviour
 {
     public GameObject levelCanvas;
     public bool lockLevel;
