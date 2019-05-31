@@ -10,11 +10,15 @@ public class GameManager : MonoBehaviour
     public int jumpLimit;
     public bool isWin;
     public bool useKeyboard;
-    public SceneFader SceneFader;
+    public SceneFader sceneFader;
 
     int m_CurrentSceneIndex;
     int m_TargetHoles;
 
+    private void Awake()
+    {
+        sceneFader.gameObject.SetActive(true);
+    }
     private void Start()
     {
         m_CurrentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -24,14 +28,14 @@ public class GameManager : MonoBehaviour
         if (jumpLimit < 0)
         {
             //In case you lose loading current scene
-            SceneFader.FadeTo(m_CurrentSceneIndex);
+            sceneFader.FadeTo(m_CurrentSceneIndex);
         }
         if (m_TargetHoles == 2)
         {
             //In case you win load next level
             if (isWin)
             {
-                SceneFader.FadeTo(m_CurrentSceneIndex + 1);
+                sceneFader.FadeTo(m_CurrentSceneIndex + 1);
             }
         }
     }
