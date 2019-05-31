@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Mainmenu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public SceneFader sceneFader;
 
-    public void Play ()
+    public void Play()
     {
         sceneFader.FadeTo(1);
     }
-    public void Quit ()
+    public void Quit()
     {
         Application.Quit();
     }
