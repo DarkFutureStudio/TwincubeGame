@@ -10,11 +10,6 @@ public class SceneFader : MonoBehaviour
     public CanvasGroup canvasGroup;
 
 
-    private void Awake()
-    {
-        gameObject.SetActive(true);
-        Debug.Log("Awake called");
-    }
     void Start ()
     {
         //Every scene with load will fade out
