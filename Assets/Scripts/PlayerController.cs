@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour
 {
     public GameManager gameManager;
     public Joystick joystick;
+    public Transform groundCheck;
+    public LayerMask whatIsGround;
 
     Rigidbody2D m_Rigidbody;
     Vector2 m_JumpDirection;
     float m_HorizontalInput;
     bool m_IsJump;
+
 
     void Start()
     {
@@ -37,7 +40,7 @@ public class PlayerController : MonoBehaviour
             m_HorizontalInput = Input.GetAxis("Horizontal");
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                m_IsJump = true;
+                TriggerJump();
             }
 
             return;
@@ -65,6 +68,13 @@ public class PlayerController : MonoBehaviour
 
     public void TriggerJump() //Call with button event
     {
-        m_IsJump = true;
+        Collider2D[] grounded = Physics2D.OverlapCircleAll(groundCheck.position, .15f, whatIsGround);
+        foreach (Collider2D col in grounded)
+        {
+            if (col.gameObject == gameObject)
+                continue;
+
+            m_IsJump = true;
+        }
     }
 }
