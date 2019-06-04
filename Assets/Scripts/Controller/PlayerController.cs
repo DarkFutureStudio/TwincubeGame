@@ -4,49 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameManager gameManager;
+    public float jumpForce = 800;
+    public float moveSpeed = 40;
     public Joystick joystick;
-    public Transform groundCheck;
     public LayerMask whatIsGround;
 
-    Rigidbody2D m_Rigidbody;
-    Vector2 m_JumpDirection;
+    public static event Cubes 
+
     float m_HorizontalInput;
     bool m_IsJump;
 
+    delegate void Cubes();
 
-    void Start()
-    {
-        m_Rigidbody = GetComponent<Rigidbody2D>();
 
-        //Determines what direction should player jump
-        float jumpForce;
-        if (m_Rigidbody.gravityScale < 0)
-        {
-            jumpForce = -gameManager.playerJumpForce;
-        }
-        else
-        {
-            jumpForce = gameManager.playerJumpForce;
-        }
-
-        m_JumpDirection = new Vector2(0f, jumpForce);
-    }
-    void Update()
-    {
-        if (gameManager.useKeyboard)
-        {
-            m_HorizontalInput = Input.GetAxis("Horizontal");
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TriggerJump();
-            }
-
-            return;
-        }
-
-        m_HorizontalInput = joystick.Horizontal;
-    }
     void FixedUpdate()
     {
         if (m_IsJump)
