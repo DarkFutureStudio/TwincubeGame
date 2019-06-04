@@ -48,8 +48,8 @@ MonoBehaviour:
   playerJumpForce: 800
   jumpLimit: 100
   isWin: 0
-  useKeyboard: 0
-  SceneFader: {fileID: 0}
+  useKeyboard: 1
+  sceneFader: {fileID: 0}
 --- !u!114 &1058215423
 MonoBehaviour:
   m_ObjectHideFlags: 0
