@@ -273,6 +273,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   joystick: {fileID: 0}
+  groundCheck: {fileID: 7606793822961949581}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!95 &1112678418
 Animator:
   serializedVersion: 3
@@ -759,6 +763,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   joystick: {fileID: 0}
+  groundCheck: {fileID: 380534028175952568}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!95 &1430999454
 Animator:
   serializedVersion: 3

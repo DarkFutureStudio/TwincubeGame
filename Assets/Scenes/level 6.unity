@@ -334,12 +334,6 @@ PrefabInstance:
       objectReference: {fileID: 467422501147015211}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
---- !u!4 &1075025397 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 380534028175952568, guid: 85b0431f8611edc4db8922b2fc905262,
-    type: 3}
-  m_PrefabInstance: {fileID: 1106866844}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1103328628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -484,14 +478,6 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1015410065}
-    - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: groundCheck
-      value: 
-      objectReference: {fileID: 1075025397}
-    - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: whatIsGround.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
       propertyPath: gameManager
       value: 
@@ -500,14 +486,6 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1015410065}
-    - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: groundCheck
-      value: 
-      objectReference: {fileID: 2007706476}
-    - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
-      propertyPath: whatIsGround.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 4591006924826826845, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -561,51 +539,6 @@ PrefabInstance:
     - target: {fileID: 4591006924826826845, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370122, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006923620665022, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924502897252, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924918563219, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924918563219, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924029099663, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924088893181, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5501692469738069996, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2243990101714750501, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -954,12 +887,6 @@ MonoBehaviour:
 --- !u!4 &1769807567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4591006924918563216, guid: 85b0431f8611edc4db8922b2fc905262,
-    type: 3}
-  m_PrefabInstance: {fileID: 1106866844}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2007706476 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7606793822961949581, guid: 85b0431f8611edc4db8922b2fc905262,
     type: 3}
   m_PrefabInstance: {fileID: 1106866844}
   m_PrefabAsset: {fileID: 0}
