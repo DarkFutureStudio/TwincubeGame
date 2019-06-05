@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6034725508450762394}
   - component: {fileID: 6034725508450762395}
-  - component: {fileID: 1058215423}
+  - component: {fileID: 686230377}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -50,7 +50,7 @@ MonoBehaviour:
   isWin: 0
   useKeyboard: 1
   sceneFader: {fileID: 0}
---- !u!114 &1058215423
+--- !u!114 &686230377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,5 +62,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ae32e0aa0cd45439e30b0c9ab152ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenefader: {fileID: 0}
   pauseCanvas: {fileID: 0}
