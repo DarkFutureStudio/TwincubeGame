@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 800;
     public float moveSpeed = 40;
+    public Vector2 boxSize;
     public Joystick joystick;
     public LayerMask whatIsGround;
 
@@ -37,13 +38,16 @@ public class PlayerController : MonoBehaviour
 
     public void TriggerJump() //Call with button event
     {
-        Collider2D[] grounded = Physics2D.OverlapCircleAll(groundCheck.position, .15f, whatIsGround);
-        foreach (Collider2D col in grounded)
+        bool grounded = Physics2D.OverlapBox(groundCheck.position, boxSize, 0, whatIsGround);
+        if (grounded)
         {
-            if (col.gameObject == gameObject)
-                continue;
-
             m_IsJump = true;
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(groundCheck.position, boxSize);
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class PauseMenu: MonoBehaviour
 {
-    public SceneFader scenefader;
     public GameObject pauseCanvas;
 
     void Update()
@@ -27,9 +26,9 @@ public class PauseMenu: MonoBehaviour
         Toggle();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public void Select (int levelIndex)
+    public void Menu()
     {
         Toggle();
-        scenefader.FadeTo(levelIndex);
+        SceneManager.LoadScene(0);
     }
 }
