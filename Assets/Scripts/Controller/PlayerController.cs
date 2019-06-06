@@ -6,48 +6,35 @@ public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 800;
     public float moveSpeed = 40;
-    public Vector2 boxSize;
-    public Joystick joystick;
     public LayerMask whatIsGround;
+    public Joystick joystick;
 
-    public static event Cubes 
+    public delegate void CubesJump();
+    public static event CubesJump TriggerJump;
 
-    float m_HorizontalInput;
+    public delegate void CubesMove(Vector2 movement);
+    public static event CubesMove MoveCubes;
+
+    Vector2 m_MoveHorizontal = Vector2.zero;
     bool m_IsJump;
 
-    delegate void Cubes();
 
+    public void SetJump() => m_IsJump = true;
 
     void FixedUpdate()
     {
         if (m_IsJump)
         {
-            m_Rigidbody.AddForce(m_JumpDirection);
+            TriggerJump();
             m_IsJump = false;
         }
 
-        Move();
+        MoveCubes(m_MoveHorizontal);
     }
-
-    void Move()
+    void Update()
     {
-        float horizontalMovement = m_HorizontalInput * gameManager.playerMoveSpeed;
-        Vector2 movement = new Vector2(horizontalMovement, 0f);
-        m_Rigidbody.AddForce(movement);
-    }
-
-    public void TriggerJump() //Call with button event
-    {
-        bool grounded = Physics2D.OverlapBox(groundCheck.position, boxSize, 0, whatIsGround);
-        if (grounded)
-        {
-            m_IsJump = true;
-        }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(groundCheck.position, boxSize);
+        //calculate movement...
+        float horizontalInput = joystick.Horizontal;
+        m_MoveHorizontal = Vector2.right * horizontalInput * moveSpeed;
     }
 }

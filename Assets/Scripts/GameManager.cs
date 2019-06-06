@@ -5,11 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float playerMoveSpeed = 5f;
-    public float playerJumpForce = 170f;
     public int jumpLimit;
     public bool isWin;
-    public bool useKeyboard;
     public SceneFader sceneFader;
 
     int m_CurrentSceneIndex;
