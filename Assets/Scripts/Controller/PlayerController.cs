@@ -8,8 +8,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 40;
     public LayerMask whatIsGround;
     public Joystick joystick;
+    public GameManager gameManager;
+    public bool useKeyboard;
 
-    public delegate void CubesJump();
+    public delegate bool CubesJump();
     public static event CubesJump TriggerJump;
 
     public delegate void CubesMove(Vector2 movement);
@@ -25,7 +27,11 @@ public class PlayerController : MonoBehaviour
     {
         if (m_IsJump)
         {
-            TriggerJump();
+            bool wasJumping = TriggerJump();
+            if (wasJumping)
+            {
+                gameManager.jumpLimit--;
+            }
             m_IsJump = false;
         }
 
@@ -34,7 +40,18 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //calculate movement...
-        float horizontalInput = joystick.Horizontal;
+        float horizontalInput;
+
+        if (useKeyboard)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+
+            if (Input.GetKeyDown(KeyCode.Space))
+                SetJump();
+        }
+        else
+            horizontalInput = joystick.Horizontal;
+
         m_MoveHorizontal = Vector2.right * horizontalInput * moveSpeed;
     }
 }

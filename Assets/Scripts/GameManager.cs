@@ -37,12 +37,5 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ButtonPressed() //Pressing 'jump' button reduce jumpCount
-    {
-        jumpLimit--;
-    }
-    public void IncreamentTarget() //Put targets in holes will call this function
-    {
-        m_TargetHoles++;
-    }
+    public void IncreamentTarget() => m_TargetHoles++;
 }

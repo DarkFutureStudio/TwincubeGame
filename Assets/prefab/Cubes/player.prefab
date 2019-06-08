@@ -631,6 +631,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   joystick: {fileID: 0}
+  gameManager: {fileID: 0}
+  useKeyboard: 1
 --- !u!1 &4591006924918563219
 GameObject:
   m_ObjectHideFlags: 0
