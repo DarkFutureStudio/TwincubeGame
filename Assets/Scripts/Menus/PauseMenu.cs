@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class PauseMenu: MonoBehaviour
 {
-    public SceneFader scenefader;
     public GameObject pauseCanvas;
+    public SceneFader sceneFader;
 
     void Update()
     {
@@ -25,11 +25,11 @@ public class PauseMenu: MonoBehaviour
     public void Retry()
     {
         Toggle();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneFader.FadeTo(SceneManager.GetActiveScene().buildIndex);
     }
-    public void Select (int levelIndex)
+    public void Menu()
     {
         Toggle();
-        scenefader.FadeTo(levelIndex);
+        sceneFader.FadeTo(0);
     }
 }

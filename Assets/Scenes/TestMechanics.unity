@@ -398,6 +398,11 @@ PrefabInstance:
       propertyPath: useKeyboard
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1239972991}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -453,6 +458,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1058215423, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: scenefader
+      value: 
+      objectReference: {fileID: 1239972991}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
 --- !u!114 &798070173 stripped
@@ -565,7 +574,7 @@ PrefabInstance:
     - target: {fileID: 5452222832465951473, guid: dc11860c88334954ca288cf4df80c678,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6722782601905604066, guid: dc11860c88334954ca288cf4df80c678,
         type: 3}
@@ -705,7 +714,7 @@ PrefabInstance:
     - target: {fileID: 70655068, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 2002284829}
+      objectReference: {fileID: 0}
     - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
       propertyPath: gameManager
       value: 
@@ -713,7 +722,7 @@ PrefabInstance:
     - target: {fileID: 19812984, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 2002284829}
+      objectReference: {fileID: 0}
     - target: {fileID: 4591006924826826845, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -937,15 +946,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
---- !u!114 &2002284829 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4228376117223912356, guid: 90911f457d451cf43b34507d1ca95a93,
-    type: 3}
-  m_PrefabInstance: {fileID: 2002284828}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

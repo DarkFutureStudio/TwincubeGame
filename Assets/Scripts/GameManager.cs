@@ -5,11 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float playerMoveSpeed = 5f;
-    public float playerJumpForce = 170f;
     public int jumpLimit;
     public bool isWin;
-    public bool useKeyboard;
     public SceneFader sceneFader;
 
     int m_CurrentSceneIndex;
@@ -40,12 +37,5 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ButtonPressed() //Pressing 'jump' button reduce jumpCount
-    {
-        jumpLimit--;
-    }
-    public void IncreamentTarget() //Put targets in holes will call this function
-    {
-        m_TargetHoles++;
-    }
+    public void IncreamentTarget() => m_TargetHoles++;
 }
