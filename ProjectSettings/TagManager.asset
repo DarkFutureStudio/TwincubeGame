@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - trap
+  - Time
   layers:
   - Default
   - TransparentFX
