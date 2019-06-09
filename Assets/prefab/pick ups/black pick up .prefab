@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timevalue: 5
+  counterDwonScript: {fileID: 0}
 --- !u!1 &1036952660799270091
 GameObject:
   m_ObjectHideFlags: 0

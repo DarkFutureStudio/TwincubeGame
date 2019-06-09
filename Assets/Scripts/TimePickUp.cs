@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Time_M: MonoBehaviour
+public class TimePickUp : MonoBehaviour
 {
-    
-    internal static int deltaTime;
-    public int Timevalue = 10;
+    public CountDownTimer counterDwonScript;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            CountDownTimer.instanvce.ChangeTime(Timevalue:Timevalue);
+            counterDwonScript.IncreaseTime();
+            Destroy(gameObject);
         }
     }
 }
