@@ -9,30 +9,25 @@ public class GameManager : MonoBehaviour
     public bool isWin;
     public SceneFader sceneFader;
 
-    int m_CurrentSceneIndex;
     int m_TargetHoles;
 
     private void Awake()
     {
         sceneFader.gameObject.SetActive(true);
     }
-    private void Start()
-    {
-        m_CurrentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-    }
     private void Update()
     {
         if (jumpLimit < 0)
         {
             //In case you lose loading current scene
-            sceneFader.FadeTo(m_CurrentSceneIndex);
+            sceneFader.FadeTo(sceneFader.currentSceneIndex);
         }
         if (m_TargetHoles == 2)
         {
             //In case you win load next level
             if (isWin)
             {
-                sceneFader.FadeTo(m_CurrentSceneIndex + 1);
+                sceneFader.FadeTo(sceneFader.currentSceneIndex + 1);
             }
         }
     }

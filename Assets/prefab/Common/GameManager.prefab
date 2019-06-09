@@ -44,11 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c5726354ed61f48a4306be171c7bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMoveSpeed: 40
-  playerJumpForce: 800
   jumpLimit: 100
   isWin: 0
-  useKeyboard: 1
   sceneFader: {fileID: 0}
 --- !u!114 &686230377
 MonoBehaviour:
@@ -63,3 +60,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseCanvas: {fileID: 0}
+  sceneFader: {fileID: 0}

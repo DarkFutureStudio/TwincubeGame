@@ -9,10 +9,13 @@ public class SceneFader : MonoBehaviour
     public float fadeDuration = 1;
     public CanvasGroup canvasGroup;
 
+    [HideInInspector]
+    public int currentSceneIndex;
+
 
     void Start ()
     {
-        //Every scene with load will fade out
+        //Every scene with load will fade in
         StartCoroutine(FadeIn());
     }
 
@@ -31,6 +34,8 @@ public class SceneFader : MonoBehaviour
             canvasGroup.alpha = timer / fadeDuration; //Changin opacity
             yield return 0;
         }
+
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
     IEnumerator FadeOut(int scene)
     {
