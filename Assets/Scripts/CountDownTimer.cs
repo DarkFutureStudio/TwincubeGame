@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class CountDownTimer : MonoBehaviour
 {
-    public static CountDownTimer instanvce;
+    public SceneFader sceneFader;
+
     float currentTime = 0f;
-    float startTime = 60f;
+    readonly float startTime = 60f;
     [SerializeField] Text countdownText;
     private void Start()
     {
@@ -15,8 +16,7 @@ public class CountDownTimer : MonoBehaviour
     }
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
-        print(currentTime);
+        currentTime -= Time.deltaTime;
         countdownText.text = currentTime.ToString ("00");
         if (currentTime <= 0)
         {
@@ -26,7 +26,6 @@ public class CountDownTimer : MonoBehaviour
 
     public void ChangeTime(int Timevalue)
     {
-        currentTime += Timevalue * Time.deltaTime;
-        countdownText.text = currentTime.ToString("00");
+        currentTime += Timevalue;
     }
 }

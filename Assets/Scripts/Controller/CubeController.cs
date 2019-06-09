@@ -58,12 +58,4 @@ public class CubeController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(groundCheck.position, boxSize);
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Time"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
 }
