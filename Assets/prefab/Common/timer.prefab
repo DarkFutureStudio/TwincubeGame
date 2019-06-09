@@ -114,6 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 0}
   countdownText: {fileID: 2981080817853115935}
+  startTime: 20
+  pickupTime: 5
 --- !u!1 &2981080817853115934
 GameObject:
   m_ObjectHideFlags: 0
