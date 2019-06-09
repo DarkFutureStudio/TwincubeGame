@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35cc40010e22dc74a9cdc221264ea9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneFader: {fileID: 0}
   countdownText: {fileID: 2981080817853115935}
 --- !u!1 &2981080817853115934
 GameObject:

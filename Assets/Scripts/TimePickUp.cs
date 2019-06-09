@@ -11,7 +11,7 @@ public class TimePickUp : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            counterDwonScript.ChangeTime(Timevalue);
+            counterDwonScript.IncreaseTime(Timevalue);
             Destroy(gameObject);
         }
     }
