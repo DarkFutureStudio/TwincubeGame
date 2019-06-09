@@ -7,23 +7,24 @@ public class CountDownTimer : MonoBehaviour
 {
     public SceneFader sceneFader;
     public Text countdownText;
+    public float startTime = 60;
+    public int pickupTime = 5;
 
-    float currentTime = 0f;
-    readonly float startTime = 60f;
+    float m_CurrentTime = 0f;
     private void Start()
     {
-        currentTime = startTime;
+        m_CurrentTime = startTime;
     }
     void Update()
     {
-        currentTime -= Time.deltaTime;
-        countdownText.text = currentTime.ToString ("00");
+        m_CurrentTime -= Time.deltaTime;
+        countdownText.text = m_CurrentTime.ToString ("00");
 
-        if (currentTime <= 0)
+        if (m_CurrentTime <= 0)
         {
             sceneFader.FadeTo(sceneFader.currentSceneIndex);
         }
     }
 
-    public void IncreaseTime(int Timevalue) => currentTime += Timevalue;
+    public void IncreaseTime() => m_CurrentTime += pickupTime;
 }
