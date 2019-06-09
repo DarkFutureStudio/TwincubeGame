@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Time_M: MonoBehaviour
 {
+    
     internal static int deltaTime;
-    public int Timevalue = 5;
+    public int Timevalue = 10;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            CountDownTimer.instanvce.ChangeTime(Timevalue);
+            CountDownTimer.instanvce.ChangeTime(Timevalue:Timevalue);
         }
     }
 }

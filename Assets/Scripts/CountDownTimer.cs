@@ -15,7 +15,7 @@ public class CountDownTimer : MonoBehaviour
     }
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
+        currentTime -= Time.deltaTime;
         print(currentTime);
         countdownText.text = currentTime.ToString ("00");
         if (currentTime <= 0)
@@ -26,7 +26,7 @@ public class CountDownTimer : MonoBehaviour
 
     public void ChangeTime(int Timevalue)
     {
-        currentTime += Timevalue * Time.deltaTime;
-        countdownText.text = currentTime.ToString("00");
+        currentTime += Timevalue;
+        countdownText.text = currentTime.ToString();
     }
 }
