@@ -702,6 +702,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c5726354ed61f48a4306be171c7bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1002690412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1831459623631337803, guid: d1860c4eb0df06148beff1b9d8de554a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1103328628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1058215421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,6 +797,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: gameOverUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831459623631337803, guid: d1860c4eb0df06148beff1b9d8de554a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1831459623631337807, guid: d1860c4eb0df06148beff1b9d8de554a,
         type: 3}
@@ -1263,6 +1274,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1002690412}
+    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1106866845}
+    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1637160739}
     - target: {fileID: 4636255953588710818, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: m_Name
@@ -2720,6 +2746,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 37
       objectReference: {fileID: 0}
+    - target: {fileID: 5474772114506063939, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff80405ef757f5045a209696151784c1, type: 3}
 --- !u!1001 &1637160738
@@ -3186,6 +3217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: timer
       objectReference: {fileID: 0}
+    - target: {fileID: 2981080817847212923, guid: db985aed171627d4b97ccf6293868281,
+        type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1637160739}
     - target: {fileID: 2981080817847212871, guid: db985aed171627d4b97ccf6293868281,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3291,11 +3327,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2981080817847212923, guid: db985aed171627d4b97ccf6293868281,
-        type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 1637160739}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db985aed171627d4b97ccf6293868281, type: 3}
 --- !u!1001 &1036952660425554225
@@ -3569,12 +3600,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0042858124
+      value: -0.0018749237
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000011920929
+      value: 0.0000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
