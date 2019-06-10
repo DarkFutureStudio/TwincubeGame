@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public int jumpLimit;
     public bool isWin;
     public SceneFader sceneFader;
+    public GameObject winCanvas;
 
     int m_TargetHoles;
 
@@ -25,12 +26,10 @@ public class GameManager : MonoBehaviour
         if (m_TargetHoles == 2)
         {
             //In case you win load next level
-            if (isWin)
-            {
-                sceneFader.FadeTo(sceneFader.currentSceneIndex + 1);
-            }
+            winCanvas.SetActive(true);
         }
     }
+
 
     public void IncreamentTarget() => m_TargetHoles++;
 }
