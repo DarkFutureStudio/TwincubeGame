@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7239228260262597049}
   - component: {fileID: 8595882587873383981}
   - component: {fileID: 5474772114506063939}
+  - component: {fileID: 1720290972532027672}
   m_Layer: 0
   m_Name: traps
   m_TagString: Untagged
@@ -230,6 +231,22 @@ TilemapCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
+--- !u!114 &1720290972532027672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557518714752117851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58056f04f69b4e46857da2b8cec75c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForLose: 1
+  gameOver: {fileID: 0}
+  playerController: {fileID: 0}
+  sceneFader: {fileID: 0}
 --- !u!1 &4636255953588710818
 GameObject:
   m_ObjectHideFlags: 0
