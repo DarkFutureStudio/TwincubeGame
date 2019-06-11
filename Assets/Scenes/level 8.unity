@@ -258,11 +258,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5639184859988860072, guid: b1f7b8376f4f57247bee2a9fe75edb54,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: cd3b123d29fca6e43b9ee67181a9f847, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1f7b8376f4f57247bee2a9fe75edb54, type: 3}
 --- !u!1 &276288971
@@ -1529,6 +1524,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4636255953588710818, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_Name
+      value: Grid
+      objectReference: {fileID: 0}
     - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: gameOver
@@ -1544,11 +1544,6 @@ PrefabInstance:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 1637160739}
-    - target: {fileID: 4636255953588710818, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: m_Name
-      value: Grid
-      objectReference: {fileID: 0}
     - target: {fileID: 5395650559393447962, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3884,6 +3879,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b209fc800fdc7744e96801b7ccd425b9, type: 3}
+--- !u!1 &5639184859988860073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5639184859988860073, guid: b1f7b8376f4f57247bee2a9fe75edb54,
+    type: 3}
+  m_PrefabInstance: {fileID: 120603541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5639184859988860074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639184859988860073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3518ac3f8c69f4b956c53631b1658d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForLose: 1
+  gameOver: {fileID: 1002690412}
+  playerController: {fileID: 1106866845}
+  sceneFader: {fileID: 1637160739}
 --- !u!1001 &5943636492090481807
 PrefabInstance:
   m_ObjectHideFlags: 0
