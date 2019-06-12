@@ -24,4 +24,9 @@ public class Trap : MonoBehaviour
 
         sceneFader.FadeTo(sceneFader.currentSceneIndex);
     }
+
+    public interface IDisabler
+    {
+        void OnTriggerEvent();
+    }
 }

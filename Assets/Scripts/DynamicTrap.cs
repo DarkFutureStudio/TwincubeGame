@@ -6,6 +6,7 @@ using UnityEngine;
 public class DynamicTrap : Trap
 {
     public float moveSpeed = 3; //How fast should we reach each point
+    public float turnSpeed = 1.5f; //How fast should turn
     public float dynamicRange = 4f; //the whole range trap should move
     [Range(0, 1)]
     public float disposedChannel = .5f; //how long should go left or right
@@ -25,6 +26,12 @@ public class DynamicTrap : Trap
         m_Targets[1] = m_Rigidbody.position + (Vector2.right * rightRange);
     }
     private void FixedUpdate()
+    {
+        Move();
+
+        transform.Rotate(0, 0, turnSpeed);
+    }
+    void Move()
     {
         Vector2 targetToPosition = m_Targets[m_CurrentTarget] - m_Rigidbody.position;
 
