@@ -451,8 +451,10 @@ GameObject:
   m_Component:
   - component: {fileID: 810068399}
   - component: {fileID: 810068400}
+  - component: {fileID: 810068402}
+  - component: {fileID: 810068401}
   m_Layer: 0
-  m_Name: platform (1)
+  m_Name: WinBox (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1439864745}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &810068400
 SpriteRenderer:
@@ -520,6 +522,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &810068401
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810068398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &810068402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810068398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889b0c5969b0c446a0b7041f19ec20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 937500932}
 --- !u!114 &937500932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
@@ -1037,8 +1078,6 @@ Transform:
   m_LocalPosition: {x: 36.2, y: 1.4977931, z: -0.05078125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6189130}
-  - {fileID: 276288972}
   - {fileID: 1770038735}
   - {fileID: 810068399}
   m_Father: {fileID: 0}
@@ -2721,8 +2760,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1770038735}
   - component: {fileID: 1770038736}
+  - component: {fileID: 1770038738}
+  - component: {fileID: 1770038737}
   m_Layer: 0
-  m_Name: platform
+  m_Name: WinBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2740,7 +2781,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1439864745}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1770038736
 SpriteRenderer:
@@ -3073,6 +3114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 45.991
+      objectReference: {fileID: 0}
+    - target: {fileID: 467422501121913308, guid: 68a32d369aee5d64ca9daf851c5a37b9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68a32d369aee5d64ca9daf851c5a37b9, type: 3}
