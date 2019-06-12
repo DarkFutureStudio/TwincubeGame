@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class CubeController : MonoBehaviour
 {
     public Transform groundCheck;
     public Vector2 boxSize;
+ 
 
     PlayerController m_PlayerController;
     Rigidbody2D m_Rigidbody;
@@ -57,5 +59,25 @@ public class CubeController : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(groundCheck.position, boxSize);
+    }
+
+    private ParticleSystem particle;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("trap"))
+        {
+            Destroy(gameObject);
+            StartCoroutine(Break());
+        }
+    }
+
+    private IEnumerator Break()
+    {
+        yield return new WaitForSeconds(particle.main.startLifetime.constantMax);
+    }
+
+    private void Awake()
+    {
+        particle = GetComponentInChildren<ParticleSystem> ();
     }
 }
