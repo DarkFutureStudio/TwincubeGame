@@ -1002,26 +1002,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 937500932}
-    - target: {fileID: 4591006923859370126, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.033556104
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370126, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.9328878
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924918563222, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.033556223
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006924918563222, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.93288755
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
 --- !u!114 &1106866845 stripped
