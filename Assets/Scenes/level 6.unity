@@ -1442,16 +1442,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3159469650173477511, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159469650173477511, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4636255953588710818, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: m_Name
@@ -1532,6 +1522,26 @@ PrefabInstance:
       propertyPath: sceneFader
       value: 
       objectReference: {fileID: 1637160739}
+    - target: {fileID: 2557518714752117851, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2557518714752117851, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_TagString
+      value: trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159469650173477511, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159469650173477511, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_CompositePaths.m_Paths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3124444082017381609, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: m_ColliderPaths.Array.size
@@ -2345,12 +2355,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.005346298
+      value: 0.0045728683
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000014781952
+      value: -0.000012874603
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b209fc800fdc7744e96801b7ccd425b9, type: 3}
