@@ -160,3 +160,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 0.5
   canvasGroup: {fileID: 8951993166018487475}
+  currentSceneIndex: 0
