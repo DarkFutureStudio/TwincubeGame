@@ -6,19 +6,27 @@ public class Trap : MonoBehaviour
 {
     public int waitForLose = 1;
     public GameObject gameOver;
-    public PlayerController playerController;
     public SceneFader sceneFader;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-            StartCoroutine(Lose());
+        {
+            PlayerController pl = collision.GetComponentInParent<PlayerController>();
+            CubeController cube = collision.GetComponent<CubeController>();
+
+            StartCoroutine(Lose(pl, cube));
+        }
     }
 
-    IEnumerator Lose()
+    IEnumerator Lose(PlayerController playerController, CubeController cube)
     {
-        gameOver.SetActive(true);
         playerController.enabled = false;
+        cube.Death();
+
+        yield return new WaitForSeconds(waitForLose);
+
+        gameOver.SetActive(true);
 
         yield return new WaitForSeconds(waitForLose);
 

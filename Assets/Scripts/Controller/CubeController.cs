@@ -8,6 +8,7 @@ public class CubeController : MonoBehaviour
 {
     public Transform groundCheck;
     public Vector2 boxSize;
+    public GameObject deathEffect;
  
 
     PlayerController m_PlayerController;
@@ -33,7 +34,7 @@ public class CubeController : MonoBehaviour
     }
     bool Jump()
     {
-        bool onGround = Physics2D.OverlapBox
+        bool onGround = Physics2D.OverlapBox //Make a box under player that check for ground
             (groundCheck.position, boxSize, 0, m_PlayerController.whatIsGround);
 
         if (!onGround)
@@ -43,6 +44,7 @@ public class CubeController : MonoBehaviour
         return true;
     }
     void Move(Vector2 movement) => m_Rigidbody.AddForce(movement);
+    public void Death() => Instantiate(deathEffect, transform.position, transform.rotation);
 
     private void OnEnable()
     {
@@ -59,25 +61,5 @@ public class CubeController : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(groundCheck.position, boxSize);
-    }
-
-    private ParticleSystem particle;
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("trap"))
-        {
-            Destroy(gameObject);
-            StartCoroutine(Break());
-        }
-    }
-
-    private IEnumerator Break()
-    {
-        yield return new WaitForSeconds(particle.main.startLifetime.constantMax);
-    }
-
-    private void Awake()
-    {
-        particle = GetComponentInChildren<ParticleSystem> ();
     }
 }

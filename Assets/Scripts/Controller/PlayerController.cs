@@ -54,5 +54,4 @@ public class PlayerController : MonoBehaviour
 
         m_MoveHorizontal = Vector2.right * horizontalInput * moveSpeed;
     }
-
 }

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool isWin;
     public SceneFader sceneFader;
     public GameObject winCanvas;
+    public PlayerController pl;
 
     int m_TargetHoles;
 
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
         if (m_TargetHoles == 2)
         {
             //In case you win load next level
+            pl.enabled = false;
             winCanvas.SetActive(true);
         }
     }
