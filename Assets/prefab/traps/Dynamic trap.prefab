@@ -232,6 +232,6 @@ MonoBehaviour:
   playerController: {fileID: 0}
   sceneFader: {fileID: 0}
   moveSpeed: 3
-  turnSpeed: 1.5
+  turnSpeed: 3
   dynamicRange: 7
   disposedChannel: 0.5
