@@ -9,6 +9,15 @@ public class DetectHole : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-            gameManager.IncreamentTarget();
+        {
+            gameManager.targetWin++;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            gameManager.targetWin--;
+        }
     }
 }

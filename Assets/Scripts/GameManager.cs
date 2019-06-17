@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int jumpLimit;
-    public bool isWin;
     public SceneFader sceneFader;
     public GameObject winCanvas;
     public PlayerController pl;
 
-    int m_TargetHoles;
+    [HideInInspector] public int targetWin = 0;
 
     private void Awake()
     {
@@ -24,14 +23,11 @@ public class GameManager : MonoBehaviour
             //In case you lose loading current scene
             sceneFader.FadeTo(sceneFader.currentSceneIndex);
         }
-        if (m_TargetHoles == 2)
+        if (targetWin == 2)
         {
             //In case you win load next level
             pl.enabled = false;
             winCanvas.SetActive(true);
         }
     }
-
-
-    public void IncreamentTarget() => m_TargetHoles++;
 }
