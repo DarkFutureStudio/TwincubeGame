@@ -46,7 +46,10 @@ public class CubeController : MonoBehaviour
     void Move(Vector2 movement) => m_Rigidbody.AddForce(movement);
     public void Death()
     {
-        Instantiate(deathEffect).GetComponent<ParticleSystem>().Play();
+        Instantiate(deathEffect, 
+            transform.position, 
+            transform.rotation).GetComponent<ParticleSystem>().Play();
+
         Destroy(gameObject);
     }
 
