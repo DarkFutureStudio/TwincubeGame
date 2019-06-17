@@ -21,8 +21,8 @@ public class Trap : MonoBehaviour
 
     IEnumerator Lose(PlayerController playerController, CubeController cube)
     {
-        playerController.enabled = false;
         cube.Death();
+        playerController.enabled = false;
 
         yield return new WaitForSeconds(waitForLose);
 
