@@ -47,6 +47,7 @@ MonoBehaviour:
   jumpLimit: 100
   isWin: 0
   sceneFader: {fileID: 0}
+  winCanvas: {fileID: 0}
 --- !u!114 &686230377
 MonoBehaviour:
   m_ObjectHideFlags: 0
