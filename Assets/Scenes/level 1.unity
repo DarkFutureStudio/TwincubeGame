@@ -1432,15 +1432,45 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7705097529715253883, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1114395559}
+    - target: {fileID: 7705097529715253883, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705097529715253883, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7705097529817920312, guid: 6804ab44ae91ece4b8183d98b0d4f380,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1114395559}
     - target: {fileID: 7705097529817920312, guid: 6804ab44ae91ece4b8183d98b0d4f380,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705097529817920312, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705097530654458249, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1114395559}
+    - target: {fileID: 7705097530654458249, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeTo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6804ab44ae91ece4b8183d98b0d4f380, type: 3}
@@ -2043,21 +2073,6 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[2].second.m_ColliderType
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: gameOver
-      value: 
-      objectReference: {fileID: 412192197}
-    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 1389077683}
-    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 1114395559}
     - target: {fileID: 9022726266459714743, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: m_Tiles.Array.size
@@ -2373,6 +2388,21 @@ PrefabInstance:
       propertyPath: m_TileMatrixArray.Array.data[0].m_Data.e32
       value: 4.591e-41
       objectReference: {fileID: 0}
+    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 412192197}
+    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1389077683}
+    - target: {fileID: 1720290972532027672, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1114395559}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff80405ef757f5045a209696151784c1, type: 3}
 --- !u!1 &1800698991
