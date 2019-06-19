@@ -12,17 +12,16 @@ public class Trap : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            PlayerController pl = collision.GetComponentInParent<PlayerController>();
-            CubeController cube = collision.GetComponent<CubeController>();
+            Disabler.OnEventDisable();
 
-            StartCoroutine(Lose(pl, cube));
+            CubeController cubeController = collision.GetComponent<CubeController>();
+            StartCoroutine(Lose(cubeController));
         }
     }
 
-    IEnumerator Lose(PlayerController playerController, CubeController cube)
+    IEnumerator Lose(CubeController cube)
     {
         cube.Death();
-        playerController.enabled = false;
 
         yield return new WaitForSeconds(waitForLose);
 
@@ -32,9 +31,21 @@ public class Trap : MonoBehaviour
 
         sceneFader.FadeTo(sceneFader.currentSceneIndex);
     }
-
-    public interface IDisabler
+}
+public class Disabler
+{
+    public Disabler(MonoBehaviour[] scripts)
     {
-        void OnTriggerEvent();
+        m_WhatToDisable = scripts;
+    }
+
+    static MonoBehaviour[] m_WhatToDisable;
+
+    public static void OnEventDisable()
+    {
+        foreach (var item in m_WhatToDisable)
+        {
+            item.enabled = false;
+        }
     }
 }
