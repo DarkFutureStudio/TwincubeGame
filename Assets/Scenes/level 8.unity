@@ -369,6 +369,16 @@ PrefabInstance:
       propertyPath: pl
       value: 
       objectReference: {fileID: 1106866845}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: whatShouldDisable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1106866845}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: whatShouldDisable.Array.data[1]
+      value: 
+      objectReference: {fileID: 330404363}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
