@@ -225,7 +225,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 8
+  m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -246,7 +246,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.033556104}
+  m_Offset: {x: 0.0044412613, y: -0.01605618}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -257,7 +257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.9328878}
+  m_Size: {x: 0.75347376, y: 0.89788795}
   m_EdgeRadius: 0
 --- !u!114 &73318088615137024
 MonoBehaviour:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7606793822961949581}
-  boxSize: {x: 0.8, y: 0.1}
+  boxSize: {x: 0.6, y: 0.18}
   deathEffect: {fileID: 1523118728098905000, guid: c2bf55b11ee9f394f84bf7d524801d5c,
     type: 3}
 --- !u!95 &1112678418
@@ -627,8 +627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2330fefde480d65439691ed04aab42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 800
-  moveSpeed: 40
+  jumpForce: 600
+  moveSpeed: 20
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
@@ -734,7 +734,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 8
+  m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: -1
   m_Material: {fileID: 0}
@@ -755,7 +755,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.033556223}
+  m_Offset: {x: 0.0063156784, y: 0.033556223}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -766,7 +766,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.93288755}
+  m_Size: {x: 0.81899446, y: 0.93288755}
   m_EdgeRadius: 0
 --- !u!114 &8531181492201340068
 MonoBehaviour:
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 380534028175952568}
-  boxSize: {x: 0.8, y: 0.1}
+  boxSize: {x: 0.65, y: 0.1}
   deathEffect: {fileID: 242015269835272981, guid: 2a19d817731145442a26ff2230db910e,
     type: 3}
 --- !u!95 &1430999454
