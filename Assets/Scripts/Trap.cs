@@ -7,12 +7,13 @@ public class Trap : MonoBehaviour
     public int waitForLose = 1;
     public GameObject gameOver;
     public SceneFader sceneFader;
-    public MonoBehaviour[] whatShouldDisable;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            Disabler.OnEventDisable();
+
             CubeController cubeController = collision.GetComponent<CubeController>();
             StartCoroutine(Lose(cubeController));
         }
@@ -30,9 +31,21 @@ public class Trap : MonoBehaviour
 
         sceneFader.FadeTo(sceneFader.currentSceneIndex);
     }
-
-    public static void Disabler()
+}
+public class Disabler
+{
+    public Disabler(MonoBehaviour[] scripts)
     {
-        foreach (var in whatShouldDisable)
+        m_WhatToDisable = scripts;
+    }
+
+    static MonoBehaviour[] m_WhatToDisable;
+
+    public static void OnEventDisable()
+    {
+        foreach (var item in m_WhatToDisable)
+        {
+            item.enabled = false;
+        }
     }
 }

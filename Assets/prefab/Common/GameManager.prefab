@@ -45,9 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpLimit: 100
-  isWin: 0
   sceneFader: {fileID: 0}
   winCanvas: {fileID: 0}
+  pl: {fileID: 0}
+  whatShouldDisable:
+  - {fileID: 0}
+  - {fileID: 0}
+  targetWin: 0
 --- !u!114 &686230377
 MonoBehaviour:
   m_ObjectHideFlags: 0
