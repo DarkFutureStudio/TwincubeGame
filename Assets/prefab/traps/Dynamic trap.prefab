@@ -229,9 +229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitForLose: 1
   gameOver: {fileID: 0}
-  playerController: {fileID: 0}
   sceneFader: {fileID: 0}
   moveSpeed: 3
-  turnSpeed: 3
+  turnSpeed: 4
   dynamicRange: 7
   disposedChannel: 0.5

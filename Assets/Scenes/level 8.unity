@@ -346,6 +346,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1637160739}
+    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: pauseCanvas
+      value: 
+      objectReference: {fileID: 649613304}
     - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: sceneFader
@@ -361,14 +369,16 @@ PrefabInstance:
       propertyPath: pl
       value: 
       objectReference: {fileID: 1106866845}
-    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
-      propertyPath: sceneFader
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: whatShouldDisable.Array.data[0]
       value: 
-      objectReference: {fileID: 1637160739}
-    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
-      propertyPath: pauseCanvas
+      objectReference: {fileID: 1106866845}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: whatShouldDisable.Array.data[1]
       value: 
-      objectReference: {fileID: 649613304}
+      objectReference: {fileID: 330404363}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -863,6 +873,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1637160739}
+    - target: {fileID: 7705097529817920312, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7705097529340237869, guid: 6804ab44ae91ece4b8183d98b0d4f380,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -931,7 +946,7 @@ PrefabInstance:
     - target: {fileID: 7705097529715253883, guid: 6804ab44ae91ece4b8183d98b0d4f380,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7705097530654458249, guid: 6804ab44ae91ece4b8183d98b0d4f380,
         type: 3}
@@ -4570,12 +4585,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7915611
+      value: -1.7835674
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.028684616
+      value: -0.028795242
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472726758993, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
@@ -4735,6 +4750,26 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 937500932}
+    - target: {fileID: 5979845201973067877, guid: 3a23fb08f0d2f854f912cdee56543ca5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979845201973067877, guid: 3a23fb08f0d2f854f912cdee56543ca5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979845200752004101, guid: 3a23fb08f0d2f854f912cdee56543ca5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979845200752004101, guid: 3a23fb08f0d2f854f912cdee56543ca5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.57
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a23fb08f0d2f854f912cdee56543ca5, type: 3}
 --- !u!1001 &7427975332602072671

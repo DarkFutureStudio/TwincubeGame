@@ -9,12 +9,14 @@ public class GameManager : MonoBehaviour
     public SceneFader sceneFader;
     public GameObject winCanvas;
     public PlayerController pl;
+    public MonoBehaviour[] whatShouldDisable;
 
     [HideInInspector] public int targetWin = 0;
 
     private void Awake()
     {
         sceneFader.gameObject.SetActive(true);
+        new Disabler(whatShouldDisable);
     }
     private void Update()
     {
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour
         if (targetWin == 2)
         {
             //In case you win load next level
-            pl.enabled = false;
+            Disabler.OnEventDisable();
             winCanvas.SetActive(true);
         }
     }
