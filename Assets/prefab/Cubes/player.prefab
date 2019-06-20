@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2243990101714750501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.562, z: 0}
+  m_LocalPosition: {x: -0, y: -0.532, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4591006923859370123}
@@ -225,7 +225,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 4
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -246,7 +246,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0044412613, y: -0.01605618}
+  m_Offset: {x: 0.0063156784, y: -0.017042264}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -257,7 +257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75347376, y: 0.89788795}
+  m_Size: {x: 0.81899446, y: 0.88951755}
   m_EdgeRadius: 0
 --- !u!114 &73318088615137024
 MonoBehaviour:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7606793822961949581}
-  boxSize: {x: 0.6, y: 0.18}
+  boxSize: {x: 0.65, y: 0.1}
   deathEffect: {fileID: 1523118728098905000, guid: c2bf55b11ee9f394f84bf7d524801d5c,
     type: 3}
 --- !u!95 &1112678418
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2330fefde480d65439691ed04aab42db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 600
+  jumpForce: 700
   moveSpeed: 20
   whatIsGround:
     serializedVersion: 2
@@ -734,7 +734,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 4
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: -1
   m_Material: {fileID: 0}
