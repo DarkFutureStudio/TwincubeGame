@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +13,7 @@ public class CountDownTimer : MonoBehaviour
     public string sensitiveTime = "05";
 
     float m_CurrentTime = 0f;
-    bool m_SensitiveTime = false;
+    bool m_SensitiveMode = false;
 
     private void Start()
     {
@@ -28,17 +29,18 @@ public class CountDownTimer : MonoBehaviour
             sceneFader.FadeTo(sceneFader.currentSceneIndex);
         }
 
-        if (countdownText.text.Equals(sensitiveTime) && !m_SensitiveTime)
+        if (countdownText.text.Equals(sensitiveTime) && !m_SensitiveMode)
         {
-            countdownText.color = Color.red;
+            m_SensitiveMode = true;
             countdownText.fontSize = 70;
-            m_SensitiveTime = true;
+            countdownText.color = Color.red;
         }
-        else if (m_CurrentTime > System.Convert.ToInt32(sensitiveTime) && m_SensitiveTime)
+        else if 
+            (Convert.ToInt32(countdownText.text) > Convert.ToInt32(sensitiveTime) && m_SensitiveMode)
         {
-            countdownText.color = Color.white;
+            m_SensitiveMode = false;
             countdownText.fontSize = 30;
-            m_SensitiveTime = false;
+            countdownText.color = Color.white;
         }
     }
 
