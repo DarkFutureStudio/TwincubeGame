@@ -9,6 +9,7 @@ public class CountDownTimer : MonoBehaviour
     public Text countdownText;
     public float startTime = 60;
     public int pickupTime = 5;
+    public string sensitiveTime = "05";
 
     float m_CurrentTime = 0f;
     bool m_SensitiveTime = false;
@@ -26,15 +27,20 @@ public class CountDownTimer : MonoBehaviour
         {
             sceneFader.FadeTo(sceneFader.currentSceneIndex);
         }
-        if (m_CurrentTime <= 10)
-        {
 
+        if (countdownText.text.Equals(sensitiveTime) && !m_SensitiveTime)
+        {
+            countdownText.color = Color.red;
+            countdownText.fontSize = 70;
+            m_SensitiveTime = true;
+        }
+        else if (m_CurrentTime > System.Convert.ToInt32(sensitiveTime) && m_SensitiveTime)
+        {
+            countdownText.color = Color.white;
+            countdownText.fontSize = 30;
+            m_SensitiveTime = false;
         }
     }
 
-    void ChangeTimerSituation()
-    {
-        m_SensitiveTime = !m_SensitiveTime;
-    }
     public void IncreaseTime() => m_CurrentTime += pickupTime;
 }

@@ -114,8 +114,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 0}
   countdownText: {fileID: 2981080817853115935}
-  startTime: 20
+  startTime: 10
   pickupTime: 5
+  sensitiveTime: 05
 --- !u!1 &2981080817853115934
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,8 +151,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 23, y: -14}
-  m_SizeDelta: {x: 100, y: 50}
+  m_AnchoredPosition: {x: 58.1, y: -39.1}
+  m_SizeDelta: {x: 116.3, y: 78.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2981080817853115928
 CanvasRenderer:
@@ -187,8 +188,8 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
+    m_MaxSize: 69
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
