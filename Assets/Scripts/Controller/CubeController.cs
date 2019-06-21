@@ -44,6 +44,9 @@ public class CubeController : MonoBehaviour
         return true;
     }
     void Move(Vector2 movement) => m_Rigidbody.AddForce(movement);
+
+    void Flip() => transform.Rotate(Vector3.up, 180);
+
     public void Death()
     {
         Instantiate(deathEffect, 
@@ -57,11 +60,13 @@ public class CubeController : MonoBehaviour
     {
         PlayerController.TriggerJump += Jump; //Add funtion to the event
         PlayerController.MoveCubes += Move;
+        PlayerController.TriggerFlip += Flip;
     }
     private void OnDisable()
     {
         PlayerController.TriggerJump -= Jump; //remove function from the event
         PlayerController.MoveCubes -= Move;
+        PlayerController.TriggerFlip -= Flip;
     }
 
     private void OnDrawGizmosSelected()
