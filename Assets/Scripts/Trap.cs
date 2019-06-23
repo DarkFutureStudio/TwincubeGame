@@ -36,7 +36,7 @@ public class Disabler
 {
     public Disabler(MonoBehaviour[] scripts)
     {
-        m_WhatToDisable = scripts;
+        m_WhatToDisable = scripts ?? throw new System.ArgumentNullException();
     }
 
     static MonoBehaviour[] m_WhatToDisable;
