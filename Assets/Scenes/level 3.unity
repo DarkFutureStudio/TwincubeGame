@@ -1074,7 +1074,7 @@ PrefabInstance:
     - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: useKeyboard
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
