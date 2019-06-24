@@ -546,12 +546,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.885881
+      value: 22.889189
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1321683
+      value: 0.13224125
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
@@ -884,6 +884,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetJump
       objectReference: {fileID: 0}
+    - target: {fileID: 8170153793089716893, guid: 90911f457d451cf43b34507d1ca95a93,
+        type: 3}
+      propertyPath: deadZone
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
 --- !u!114 &773903335 stripped
@@ -1106,11 +1111,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 694054027}
-    - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: useKeyboard
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
 --- !u!1001 &1152330934
