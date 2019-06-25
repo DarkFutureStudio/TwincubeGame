@@ -13,12 +13,16 @@ public class DynamicTrap : Trap
 
     Rigidbody2D m_Rigidbody;
     readonly Vector2[] m_Targets = new Vector2[2];
-    int m_CurrentTarget = 0;
+    int m_CurrentTarget, m_PreviousTarget = 0;
 
     private void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
 
+        SetupTargets();
+    }
+    void SetupTargets()
+    {
         float leftRange = dynamicRange * disposedChannel; //Calculate how much space left-range need
         float rightRange = dynamicRange - leftRange; //What remains is the right space
 
@@ -28,6 +32,17 @@ public class DynamicTrap : Trap
     private void FixedUpdate()
     {
         Move();
+
+        Rotate();
+    }
+    void Rotate()
+    {
+        bool targetChanged = m_PreviousTarget != m_CurrentTarget;
+        if (targetChanged)
+        {
+            turnSpeed = -turnSpeed;
+            m_PreviousTarget = m_CurrentTarget;
+        }
 
         transform.Rotate(0, 0, turnSpeed);
     }
