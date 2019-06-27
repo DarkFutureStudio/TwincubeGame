@@ -246,7 +246,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0038061738, y: -0.01605618}
+  m_Offset: {x: 0.000723958, y: -0.015307531}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -257,7 +257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9628048, y: 0.89788795}
+  m_Size: {x: 0.9960568, y: 0.90326214}
   m_EdgeRadius: 0
 --- !u!114 &73318088615137024
 MonoBehaviour:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7606793822961949581}
-  boxSize: {x: 0.75, y: 0.18}
+  boxSize: {x: 0.68, y: 0.18}
   deathEffect: {fileID: 1523118728098905000, guid: c2bf55b11ee9f394f84bf7d524801d5c,
     type: 3}
 --- !u!95 &1112678418
@@ -608,7 +608,7 @@ Transform:
   m_GameObject: {fileID: 4591006924826826844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.19, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_Children:
   - {fileID: 4591006923859370123}
   - {fileID: 4591006924918563216}
@@ -755,7 +755,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0063156784, y: 0.033556223}
+  m_Offset: {x: -0.0017198324, y: 0.033556223}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -766,7 +766,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9568296, y: 0.93288755}
+  m_Size: {x: 0.99968314, y: 0.93288755}
   m_EdgeRadius: 0
 --- !u!114 &8531181492201340068
 MonoBehaviour:
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 380534028175952568}
-  boxSize: {x: 0.75, y: 0.18}
+  boxSize: {x: 0.68, y: 0.18}
   deathEffect: {fileID: 242015269835272981, guid: 2a19d817731145442a26ff2230db910e,
     type: 3}
 --- !u!95 &1430999454
@@ -827,7 +827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5501692469738069996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.006, y: 0.565, z: 0}
+  m_LocalPosition: {x: 0.001, y: 0.565, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4591006924918563216}
