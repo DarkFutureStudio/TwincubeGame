@@ -1071,11 +1071,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 694054027}
-    - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: useKeyboard
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
 --- !u!1001 &1152330934
@@ -1433,11 +1428,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1114395559}
     - target: {fileID: 7705097529817920312, guid: 6804ab44ae91ece4b8183d98b0d4f380,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: FadeTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705097529817920312, guid: 6804ab44ae91ece4b8183d98b0d4f380,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6804ab44ae91ece4b8183d98b0d4f380, type: 3}

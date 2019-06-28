@@ -230,7 +230,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitForLose: 1
   gameOver: {fileID: 0}
-  playerController: {fileID: 0}
   sceneFader: {fileID: 0}
 --- !u!19719996 &7274386018631168331
 TilemapCollider2D:
