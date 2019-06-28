@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7606793822961949581}
-  boxSize: {x: 0.68, y: 0.18}
+  boxSize: {x: 0.75, y: 0.18}
   deathEffect: {fileID: 1523118728098905000, guid: c2bf55b11ee9f394f84bf7d524801d5c,
     type: 3}
 --- !u!95 &1112678418
@@ -608,7 +608,7 @@ Transform:
   m_GameObject: {fileID: 4591006924826826844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.19, y: 0, z: 0}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_LocalScale: {x: 0.9419291, y: 0.9419291, z: 0.9419291}
   m_Children:
   - {fileID: 4591006923859370123}
   - {fileID: 4591006924918563216}
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 380534028175952568}
-  boxSize: {x: 0.68, y: 0.18}
+  boxSize: {x: 0.75, y: 0.18}
   deathEffect: {fileID: 242015269835272981, guid: 2a19d817731145442a26ff2230db910e,
     type: 3}
 --- !u!95 &1430999454
