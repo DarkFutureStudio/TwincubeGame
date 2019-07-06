@@ -273,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 7606793822961949581}
   boxSize: {x: 0.75, y: 0.18}
-  deathEffect: {fileID: 1523118728098905000, guid: c2bf55b11ee9f394f84bf7d524801d5c,
+  deathEffect: {fileID: 6988116278766239213, guid: c2bf55b11ee9f394f84bf7d524801d5c,
     type: 3}
 --- !u!95 &1112678418
 Animator:
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 380534028175952568}
   boxSize: {x: 0.75, y: 0.18}
-  deathEffect: {fileID: 242015269835272981, guid: 2a19d817731145442a26ff2230db910e,
+  deathEffect: {fileID: 229539927436620339, guid: 2a19d817731145442a26ff2230db910e,
     type: 3}
 --- !u!95 &1430999454
 Animator:

@@ -8,7 +8,7 @@ public class CubeController : MonoBehaviour
 {
     public Transform groundCheck;
     public Vector2 boxSize;
-    public GameObject deathEffect;
+    public ParticleSystem deathEffect;
  
 
     PlayerController m_PlayerController;
@@ -49,9 +49,7 @@ public class CubeController : MonoBehaviour
 
     public void Death()
     {
-        Instantiate(deathEffect, 
-            transform.position, 
-            transform.rotation).GetComponent<ParticleSystem>().Play();
+        Instantiate(deathEffect, transform.position, transform.rotation).Play();
 
         Destroy(gameObject);
     }

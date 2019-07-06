@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,8 +33,7 @@ public class CountDownTimer : MonoBehaviour
             countdownText.fontSize = 70;
             countdownText.color = Color.red;
         }
-        else if 
-            (Convert.ToInt32(countdownText.text) > Convert.ToInt32(sensitiveTime) && m_SensitiveMode)
+        else if (Convert.ToInt32(countdownText.text) > Convert.ToInt32(sensitiveTime) && m_SensitiveMode)
         {
             m_SensitiveMode = false;
             countdownText.fontSize = 30;
