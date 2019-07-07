@@ -48,13 +48,12 @@ public class DynamicTrap : Trap
     }
     void Move()
     {
-        Vector2 targetToPosition = m_Targets[m_CurrentTarget] - m_Rigidbody.position;
+        Vector2 movement = Vector2.MoveTowards
+            (transform.position, m_Targets[m_CurrentTarget], moveSpeed * Time.deltaTime);
 
-        Vector2 movement = moveSpeed * Time.deltaTime * targetToPosition.normalized;
-        m_Rigidbody.MovePosition(m_Rigidbody.position + movement);
+        m_Rigidbody.MovePosition(movement);
 
-        float distance = targetToPosition.sqrMagnitude;
-        if (distance <= .1f)
+        if (transform.position == (Vector3)m_Targets[m_CurrentTarget])
             m_CurrentTarget = (m_CurrentTarget + 1) % 2;
     }
 }
