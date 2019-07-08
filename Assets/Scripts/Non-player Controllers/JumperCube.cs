@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading.Tasks;
 
 public class JumperCube : MonoBehaviour
 {
@@ -33,23 +32,10 @@ public class JumperCube : MonoBehaviour
             m_CurrentTarget = (m_CurrentTarget + 1) % 2;
 
             if (m_CurrentTarget == 0)
-            {
                 speed *= 2;
-                StartCoroutine(FirstTarget());
-            }
             else
-                StartCoroutine(SecondTarget());
+                speed /= 2;
         }
-    }
-    IEnumerator FirstTarget()
-    {
-        float distance = (transform.position - m_TargetPoints[m_CurrentTarget]).sqrMagnitude;
-    }
-    IEnumerator SecondTarget()
-    {
-        this.enabled = false;
-        yield return new WaitForSeconds(1.7f);
-        this.enabled = true;
     }
     private void OnDrawGizmosSelected()
     {

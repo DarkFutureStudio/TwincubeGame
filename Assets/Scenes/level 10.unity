@@ -328,11 +328,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5688265329936335037, guid: 470412153013e4e42946ff0b95ba95bf,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 007f946124f0f0646a7e42235e01e8fa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470412153013e4e42946ff0b95ba95bf, type: 3}
 --- !u!1001 &188921136
@@ -409,47 +404,6 @@ PrefabInstance:
       objectReference: {fileID: 44516019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c987e34a33f8946a49bbefeff94e90, type: 3}
---- !u!1 &239661506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8105259874183998475, guid: b853d36cd8a122c409bc3dff09cbe662,
-    type: 3}
-  m_PrefabInstance: {fileID: 1188162035}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &239661507
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239661506}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
---- !u!114 &239661511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239661506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd3bb0ad21179d4ebadfe00df60e309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPoint: {x: 0, y: -2.5}
-  speed: 3.01
 --- !u!4 &287138376 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4591006924918563216, guid: 85b0431f8611edc4db8922b2fc905262,
@@ -1904,8 +1858,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8105259874183998516, guid: b853d36cd8a122c409bc3dff09cbe662, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b853d36cd8a122c409bc3dff09cbe662, type: 3}
 --- !u!1001 &1287730417
 PrefabInstance:
