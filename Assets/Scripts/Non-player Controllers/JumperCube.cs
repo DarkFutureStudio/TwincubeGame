@@ -32,10 +32,19 @@ public class JumperCube : MonoBehaviour
             m_CurrentTarget = (m_CurrentTarget + 1) % 2;
 
             if (m_CurrentTarget == 0)
-                speed *= 2;
+                speed *= 3;
             else
-                speed /= 2;
+            {
+                speed /= 3;
+                StartCoroutine(DisableScript());
+            }
         }
+    }
+    IEnumerator DisableScript()
+    {
+        this.enabled = false;
+        yield return new WaitForSeconds(2);
+        this.enabled = true;
     }
     private void OnDrawGizmosSelected()
     {
