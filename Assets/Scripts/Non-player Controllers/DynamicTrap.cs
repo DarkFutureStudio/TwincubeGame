@@ -26,8 +26,8 @@ public class DynamicTrap : Trap
         float leftRange = dynamicRange * disposedChannel; //Calculate how much space left-range need
         float rightRange = dynamicRange - leftRange; //What remains is the right space
 
-        m_Targets[0] = m_Rigidbody.position - (Vector2.right * leftRange);
-        m_Targets[1] = m_Rigidbody.position + (Vector2.right * rightRange);
+        m_Targets[0] = transform.position - (Vector3.right * leftRange);
+        m_Targets[1] = transform.position + (Vector3.right * rightRange);
     }
     private void FixedUpdate()
     {
@@ -61,15 +61,12 @@ public class DynamicTrap : Trap
         if (UnityEditor.EditorApplication.isPlaying)
             return;
 
-        float leftRange = dynamicRange * disposedChannel; //Calculate how much space left-range need
-        float rightRange = dynamicRange - leftRange; //What remains is the right space
-
-        m_Targets[0] = transform.position - (Vector3.right * leftRange);
-        m_Targets[1] = transform.position + (Vector3.right * rightRange);
-
+        SetupTargets();
 
         Gizmos.color = Color.red;
-        Vector3 size = new Vector2((m_Targets[1] - m_Targets[0]).magnitude, .5f);
-        Gizmos.DrawWireCube(transform.position, size);
+        float xAxis = (m_Targets[1] - m_Targets[0]).magnitude;
+        Vector3 size = new Vector2(xAxis, .5f);
+        Vector3 center = (m_Targets[1] + m_Targets[0]) / 2;
+        Gizmos.DrawWireCube(center, size);
     }
 }
