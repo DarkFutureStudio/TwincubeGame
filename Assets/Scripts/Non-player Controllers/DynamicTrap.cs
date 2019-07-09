@@ -56,4 +56,20 @@ public class DynamicTrap : Trap
         if (transform.position == (Vector3)m_Targets[m_CurrentTarget])
             m_CurrentTarget = (m_CurrentTarget + 1) % 2;
     }
+    private void OnDrawGizmosSelected()
+    {
+        if (UnityEditor.EditorApplication.isPlaying)
+            return;
+
+        float leftRange = dynamicRange * disposedChannel; //Calculate how much space left-range need
+        float rightRange = dynamicRange - leftRange; //What remains is the right space
+
+        m_Targets[0] = transform.position - (Vector3.right * leftRange);
+        m_Targets[1] = transform.position + (Vector3.right * rightRange);
+
+
+        Gizmos.color = Color.red;
+        Vector3 size = new Vector2((m_Targets[1] - m_Targets[0]).magnitude, .5f);
+        Gizmos.DrawWireCube(transform.position, size);
+    }
 }
