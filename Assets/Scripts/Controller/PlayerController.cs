@@ -6,10 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 800;
     public float moveSpeed = 40;
+
+    [Space(4)]
     public LayerMask whatIsGround;
+    [Space(4)]
+
     public Joystick joystick;
     public GameManager gameManager;
-    public bool useKeyboard;
 
     public delegate bool CubesJump();
     public static event CubesJump TriggerJump;
@@ -23,6 +26,7 @@ public class PlayerController : MonoBehaviour
     Vector2 m_MoveHorizontal = Vector2.zero;
     bool m_IsJump;
     bool m_FacingRight = true;
+    float m_Horizontal;
 
     public void SetJump() => m_IsJump = true;
 
@@ -42,27 +46,16 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        //Calculate movement...
-        float horizontalInput;
+        m_Horizontal = joystick.Horizontal;
 
-        if (useKeyboard)
-        {
-            horizontalInput = Input.GetAxis("Horizontal");
+        m_MoveHorizontal = Vector2.right * m_Horizontal * moveSpeed;
 
-            if (Input.GetKeyDown(KeyCode.Space))
-                SetJump();
-        }
-        else
-            horizontalInput = joystick.Horizontal;
-
-        m_MoveHorizontal = Vector2.right * horizontalInput * moveSpeed;
-
-        if (horizontalInput < 0 && m_FacingRight)
-            OnFlip();
-        else if (horizontalInput > 0 && !m_FacingRight)
-            OnFlip();
+        if (m_Horizontal < 0 && m_FacingRight)
+            ChangeDirection();
+        else if (m_Horizontal > 0 && !m_FacingRight)
+            ChangeDirection();
     }
-    void OnFlip()
+    void ChangeDirection()
     {
         m_FacingRight = !m_FacingRight;
         TriggerFlip();
