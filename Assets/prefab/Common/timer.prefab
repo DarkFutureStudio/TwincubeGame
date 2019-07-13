@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 0}
   countdownText: {fileID: 2981080817853115935}
-  startTime: 15
+  startTime: 60
   pickupTime: 5
   sensitiveTime: 05
 --- !u!223 &2981080817847212870

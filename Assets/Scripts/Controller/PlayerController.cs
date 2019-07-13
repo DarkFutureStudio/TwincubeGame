@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public delegate void Flip();
     public static event Flip TriggerFlip;
 
-    Vector2 m_MoveHorizontal = Vector2.zero;
+    Vector2 m_Move = Vector2.zero;
     bool m_IsJump;
     bool m_FacingRight = true;
     float m_Horizontal;
@@ -42,13 +42,13 @@ public class PlayerController : MonoBehaviour
             m_IsJump = false;
         }
 
-        MoveCubes(m_MoveHorizontal);
+        MoveCubes(m_Move);
     }
     void Update()
     {
         m_Horizontal = joystick.Horizontal;
 
-        m_MoveHorizontal = Vector2.right * m_Horizontal * moveSpeed;
+        m_Move = Vector2.right * m_Horizontal * moveSpeed;
 
         if (m_Horizontal < 0 && m_FacingRight)
             ChangeDirection();

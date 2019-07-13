@@ -37,11 +37,10 @@ public class CubeController : MonoBehaviour
         bool onGround = Physics2D.OverlapBox //Make a box under player that check for ground
             (groundCheck.position, boxSize, 0, m_PlayerController.whatIsGround);
 
-        if (!onGround)
-            return false;
+        if (onGround)
+            m_Rigidbody.AddForce(m_JumpDirection, ForceMode2D.Impulse);
 
-        m_Rigidbody.AddForce(m_JumpDirection);
-        return true;
+        return onGround;
     }
     void Move(Vector2 movement) => m_Rigidbody.AddForce(movement);
 
