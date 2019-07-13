@@ -46,6 +46,7 @@ public class JumperCube : MonoBehaviour
         yield return new WaitForSeconds(2);
         this.enabled = true;
     }
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         if (!UnityEditor.EditorApplication.isPlaying)
@@ -55,4 +56,5 @@ public class JumperCube : MonoBehaviour
             Gizmos.DrawLine(transform.position, target);
         }
     }
+#endif
 }

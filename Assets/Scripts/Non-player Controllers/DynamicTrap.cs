@@ -56,6 +56,7 @@ public class DynamicTrap : Trap
         if (transform.position == (Vector3)m_Targets[m_CurrentTarget])
             m_CurrentTarget = (m_CurrentTarget + 1) % 2;
     }
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         if (UnityEditor.EditorApplication.isPlaying)
@@ -69,4 +70,5 @@ public class DynamicTrap : Trap
         Vector3 center = (m_Targets[1] + m_Targets[0]) / 2;
         Gizmos.DrawWireCube(center, size);
     }
+#endif
 }
