@@ -586,12 +586,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.999815
+      value: 22.673199
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08471632
+      value: 0.08018017
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
@@ -697,14 +697,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
-      propertyPath: pauseCanvas
-      value: 
-      objectReference: {fileID: 1152330935}
-    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 1114395559}
     - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: sceneFader
@@ -730,6 +722,14 @@ PrefabInstance:
       propertyPath: whatShouldDisable.Array.data[1]
       value: 
       objectReference: {fileID: 44516019}
+    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: pauseCanvas
+      value: 
+      objectReference: {fileID: 1152330935}
+    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1114395559}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -942,6 +942,14 @@ PrefabInstance:
     - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1389077683}
+    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetJump
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1583,16 +1591,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
-    - target: {fileID: 4591006924918563216, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370123, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.4
-      objectReference: {fileID: 0}
     - target: {fileID: 4591006924826826845, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1662,6 +1660,16 @@ PrefabInstance:
         type: 3}
       propertyPath: useKeyboard
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591006923859370123, guid: 85b0431f8611edc4db8922b2fc905262,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591006924918563216, guid: 85b0431f8611edc4db8922b2fc905262,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4591006923859370126, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}

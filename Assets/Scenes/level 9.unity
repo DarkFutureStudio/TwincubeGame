@@ -343,14 +343,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
-      propertyPath: sceneFader
-      value: 
-      objectReference: {fileID: 1637160739}
-    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
-      propertyPath: pauseCanvas
-      value: 
-      objectReference: {fileID: 649613304}
     - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: sceneFader
@@ -376,6 +368,14 @@ PrefabInstance:
       propertyPath: whatShouldDisable.Array.data[1]
       value: 
       objectReference: {fileID: 330404363}
+    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: sceneFader
+      value: 
+      objectReference: {fileID: 1637160739}
+    - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
+      propertyPath: pauseCanvas
+      value: 
+      objectReference: {fileID: 649613304}
     - target: {fileID: 6034725508450762394, guid: d690733b8b35cb04f9995aa33010b14e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -998,6 +998,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1106866845}
+    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1106866845}
+    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetJump
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
 --- !u!1001 &1547585570
@@ -3700,15 +3708,15 @@ PrefabInstance:
       propertyPath: m_ChunkCullingBounds.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8771021653583720086, guid: ff80405ef757f5045a209696151784c1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2557518714752117851, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771021653583720086, guid: ff80405ef757f5045a209696151784c1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7879056048044506889, guid: ff80405ef757f5045a209696151784c1,
         type: 3}
@@ -4479,12 +4487,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5548229
+      value: -2.0374317
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.037483692
+      value: 0.012113094
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472726758993, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
