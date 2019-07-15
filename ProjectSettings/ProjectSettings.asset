@@ -711,10 +711,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 8f9b924f-0478-4fd3-8099-b5bf5c745bf2
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: TwinCube
-  organizationId: sinnerman0
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
