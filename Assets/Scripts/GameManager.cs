@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int jumpLimit;
     public SceneFader sceneFader;
-    public GameObject winCanvas;
+    public GameObject winCanvas, touchController;
     public PlayerController pl;
     public MonoBehaviour[] whatShouldDisable;
 
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         {
             //In case you win load next level
             Disabler.OnEventDisable();
+            Destroy(touchController);
             winCanvas.SetActive(true);
         }
     }

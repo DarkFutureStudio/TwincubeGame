@@ -571,6 +571,11 @@ PrefabInstance:
       propertyPath: whatShouldDisable.Array.data[1]
       value: 
       objectReference: {fileID: 1637824569}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: touchController
+      value: 
+      objectReference: {fileID: 1529843385}
     - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
       propertyPath: pauseCanvas
       value: 
@@ -1203,6 +1208,12 @@ PrefabInstance:
       objectReference: {fileID: 1106866845}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+--- !u!1 &1529843385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1299568602012574683, guid: 90911f457d451cf43b34507d1ca95a93,
+    type: 3}
+  m_PrefabInstance: {fileID: 1529843384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1553035243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13433,12 +13444,12 @@ PrefabInstance:
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0375109
+      value: -3.062705
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472918249166, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.018268108
+      value: -0.004114628
       objectReference: {fileID: 0}
     - target: {fileID: 4821476472726758993, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
