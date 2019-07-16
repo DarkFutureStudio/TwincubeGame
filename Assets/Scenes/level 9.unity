@@ -639,21 +639,6 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370127, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370127, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4591006923859370127, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4591006924918563223, guid: 85b0431f8611edc4db8922b2fc905262,
         type: 3}
       propertyPath: m_Mass
