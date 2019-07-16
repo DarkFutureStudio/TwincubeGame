@@ -571,14 +571,14 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 6.7680607
       objectReference: {fileID: 0}
-    - target: {fileID: 4821476473345961342, guid: b209fc800fdc7744e96801b7ccd425b9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4821476473345961343, guid: b209fc800fdc7744e96801b7ccd425b9,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821476473345961342, guid: b209fc800fdc7744e96801b7ccd425b9,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -610,6 +610,11 @@ PrefabInstance:
       propertyPath: pl
       value: 
       objectReference: {fileID: 1389077683}
+    - target: {fileID: 6034725508450762395, guid: d690733b8b35cb04f9995aa33010b14e,
+        type: 3}
+      propertyPath: touchController
+      value: 
+      objectReference: {fileID: 773903336}
     - target: {fileID: 686230377, guid: d690733b8b35cb04f9995aa33010b14e, type: 3}
       propertyPath: pauseCanvas
       value: 
@@ -822,6 +827,14 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1389077683}
+    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetJump
+      objectReference: {fileID: 0}
     - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -830,14 +843,6 @@ PrefabInstance:
     - target: {fileID: 1299568602320225917, guid: 90911f457d451cf43b34507d1ca95a93,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetJump
-      objectReference: {fileID: 0}
-    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1389077683}
-    - target: {fileID: 680735646, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetJump
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -854,6 +859,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &773903336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1299568602012574683, guid: 90911f457d451cf43b34507d1ca95a93,
+    type: 3}
+  m_PrefabInstance: {fileID: 773903334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1114395558
 PrefabInstance:
   m_ObjectHideFlags: 0
