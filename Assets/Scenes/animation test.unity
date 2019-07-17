@@ -2441,17 +2441,17 @@ PrefabInstance:
     - target: {fileID: 4885276453604391346, guid: 915fcf2af3204b44aa97028d72819beb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.4582887
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4885276453604391346, guid: 915fcf2af3204b44aa97028d72819beb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.03336098
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4885276453604391346, guid: 915fcf2af3204b44aa97028d72819beb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2946777
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4885276453604391346, guid: 915fcf2af3204b44aa97028d72819beb,
         type: 3}
@@ -2501,13 +2501,40 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 694054027}
-    - target: {fileID: 165611264, guid: 915fcf2af3204b44aa97028d72819beb, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 6501402361390818145, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203961776239027015, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443047353096331962, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 165611265, guid: 915fcf2af3204b44aa97028d72819beb, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 5443047353096331962, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443047353096331962, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443047353096331962, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443047353096331962, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 915fcf2af3204b44aa97028d72819beb, type: 3}
