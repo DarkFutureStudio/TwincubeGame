@@ -2410,6 +2410,16 @@ PrefabInstance:
       propertyPath: whatIsGround.m_Bits
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 224498074417412563, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_Name
+      value: CheckGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 1249060604334186528, guid: 915fcf2af3204b44aa97028d72819beb,
+        type: 3}
+      propertyPath: m_Name
+      value: CheckGround
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 915fcf2af3204b44aa97028d72819beb, type: 3}
 --- !u!4 &7008591514664399907 stripped
