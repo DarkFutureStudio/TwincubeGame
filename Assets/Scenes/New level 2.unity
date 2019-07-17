@@ -938,18 +938,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90911f457d451cf43b34507d1ca95a93, type: 3}
---- !u!114 &773903335 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8170153793089716893, guid: 90911f457d451cf43b34507d1ca95a93,
-    type: 3}
-  m_PrefabInstance: {fileID: 773903334}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &773903336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1299568602012574683, guid: 90911f457d451cf43b34507d1ca95a93,
@@ -1153,26 +1141,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 773903335}
-    - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 694054027}
-    - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: useKeyboard
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5551618997785924362, guid: 85b0431f8611edc4db8922b2fc905262,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 15.53
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0431f8611edc4db8922b2fc905262, type: 3}
