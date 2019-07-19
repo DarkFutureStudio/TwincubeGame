@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
     Vector2 m_Move = Vector2.zero;
     bool m_IsJump;
     bool m_FacingRight = true;
-    float m_Horizontal;
 
     public void SetJump() => m_IsJump = true;
 
@@ -46,13 +45,13 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        m_Horizontal = joystick.Horizontal;
+        float input = joystick.Horizontal;
 
-        m_Move = Vector2.right * m_Horizontal * moveSpeed;
+        m_Move = Vector2.right * input * moveSpeed;
 
-        if (m_Horizontal < 0 && m_FacingRight)
+        if (input < 0 && m_FacingRight)
             ChangeDirection();
-        else if (m_Horizontal > 0 && !m_FacingRight)
+        else if (input > 0 && !m_FacingRight)
             ChangeDirection();
     }
     void ChangeDirection()
