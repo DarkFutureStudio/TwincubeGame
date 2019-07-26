@@ -14,14 +14,12 @@ public class PlayerController : MonoBehaviour
     public Joystick joystick;
     public GameManager gameManager;
 
-    public delegate bool CubesJump();
-    public static event CubesJump TriggerJump;
-
+    public delegate void Triggers();
     public delegate void CubesMove(Vector2 movement);
-    public static event CubesMove MoveCubes;
 
-    public delegate void Flip();
-    public static event Flip TriggerFlip;
+    public static event Triggers TriggerJump;
+    public static event CubesMove MoveCubes;
+    public static event Triggers TriggerFlip;
 
     Vector2 m_Move = Vector2.zero;
     bool m_IsJump;
@@ -33,11 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         if (m_IsJump)
         {
-            bool wasJumping = TriggerJump();
-            if (wasJumping)
-            {
-                gameManager.jumpLimit--;
-            }
+            TriggerJump();
             m_IsJump = false;
         }
 

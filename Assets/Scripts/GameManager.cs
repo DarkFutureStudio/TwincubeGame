@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int jumpLimit;
     public SceneFader sceneFader;
     public GameObject winCanvas, touchController;
     public PlayerController pl;
+    [Space(6)]
     public MonoBehaviour[] whatShouldDisable;
 
     [HideInInspector] public int targetWin = 0;
@@ -20,16 +20,13 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (jumpLimit < 0)
-        {
-            //In case you lose loading current scene
-            sceneFader.FadeTo(sceneFader.currentSceneIndex);
-        }
         if (targetWin == 2)
         {
             //In case you win load next level
             Disabler.OnEventDisable();
+
             Destroy(touchController);
+
             winCanvas.SetActive(true);
         }
     }
