@@ -5,43 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float playerMoveSpeed = 5f;
-    public float playerJumpForce = 170f;
-    public int jumpLimit;
-    public bool isWin;
-    public bool useKeyboard;
-    public SceneFader SceneFader;
+    public SceneFader sceneFader;
+    public GameObject winCanvas, touchController;
+    public PlayerController pl;
+    [Space(6)]
+    public MonoBehaviour[] whatShouldDisable;
 
-    int m_CurrentSceneIndex;
-    int m_TargetHoles;
+    [HideInInspector] public int targetWin = 0;
 
-    private void Start()
+    private void Awake()
     {
-        m_CurrentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        sceneFader.gameObject.SetActive(true);
+        new Disabler(whatShouldDisable);
     }
     private void Update()
     {
-        if (jumpLimit < 0)
-        {
-            //In case you lose loading current scene
-            SceneFader.FadeTo(m_CurrentSceneIndex);
-        }
-        if (m_TargetHoles == 2)
+        if (targetWin == 2)
         {
             //In case you win load next level
-            if (isWin)
-            {
-                SceneFader.FadeTo(m_CurrentSceneIndex + 1);
-            }
-        }
-    }
+            Disabler.OnEventDisable();
 
-    public void ButtonPressed() //Pressing 'jump' button reduce jumpCount
-    {
-        jumpLimit--;
-    }
-    public void IncreamentTarget() //Put targets in holes will call this function
-    {
-        m_TargetHoles++;
+            Destroy(touchController);
+
+            winCanvas.SetActive(true);
+        }
     }
 }
